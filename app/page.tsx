@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ClassCard from "@/components/ClassCard";
 import HomeProgress from "@/components/HomeProgress";
 import { course } from "@/lib/data";
@@ -54,16 +53,14 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Hero image */}
+        {/* Hero image — plain img to avoid basePath prefix from next/image */}
         <div className="relative w-full overflow-hidden" style={{ maxHeight: '460px' }}>
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/programatica-hero.jpeg"
             alt="Programática + IA · Curso ejecutivo"
-            width={1920}
-            height={960}
-            priority
             className="w-full object-cover"
-            style={{ maxHeight: '460px', objectPosition: 'center 55%' }}
+            style={{ maxHeight: '460px', objectPosition: 'center 55%', display: 'block' }}
           />
         </div>
       </section>
