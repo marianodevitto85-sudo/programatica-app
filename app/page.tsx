@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ClassCard from "@/components/ClassCard";
 import HomeProgress from "@/components/HomeProgress";
 import { course } from "@/lib/data";
@@ -51,6 +52,19 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Hero image */}
+        <div className="relative w-full overflow-hidden" style={{ maxHeight: '460px' }}>
+          <Image
+            src="/programatica-hero.jpeg"
+            alt="Programática + IA · Curso ejecutivo"
+            width={1920}
+            height={960}
+            priority
+            className="w-full object-cover"
+            style={{ maxHeight: '460px', objectPosition: 'center 55%' }}
+          />
         </div>
       </section>
 
