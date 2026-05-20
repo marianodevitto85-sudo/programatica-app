@@ -4,3 +4,11 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# Allow embedding inside marianodevitto.com via iframe.
+# CSP frame-ancestors takes precedence over X-Frame-Options in all modern
+# browsers, so this overrides the SAMEORIGIN header added by the Next.js plugin.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "frame-ancestors 'self' https://marianodevitto.com https://marianodevittomkt.netlify.app"
