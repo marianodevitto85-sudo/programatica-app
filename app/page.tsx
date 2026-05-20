@@ -11,7 +11,7 @@ export default function HomePage() {
         {/* Background image */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/programatica-hero.jpeg"
+          src="https://marianodevitto.com/assets/cursos/programatica-hero.jpeg"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover"
