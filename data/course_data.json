@@ -1,0 +1,2001 @@
+{
+  "meta": {
+    "title": "Programática + IA",
+    "subtitle": "Compra programática moderna y la integración de la IA",
+    "audience": "B2B SaaS · perspectiva estratégica/consultiva",
+    "coverage": "Mercado global y europeo",
+    "totalClasses": 8,
+    "totalWords": 14059,
+    "language": "es",
+    "lastUpdated": "2026-05-20"
+  },
+  "palette": {
+    "navy": "#1E2761",
+    "coral": "#F96167",
+    "iceblue": "#CADCFC",
+    "white": "#FFFFFF",
+    "darktext": "#1A1F36",
+    "muted": "#5A6478",
+    "softbg": "#F4F6FC",
+    "light": "#EEF1F8",
+    "warm": "#FFF4E5",
+    "mint": "#EAF7EE"
+  },
+  "classes": [
+    {
+      "num": 1,
+      "title": "Fundamentos y panorama actual de la compra programática",
+      "duration": "20 minutos",
+      "eyebrow": "Fundamentos",
+      "objectives": [
+        "Entender qué es exactamente la compra programática y diferenciarla de la publicidad digital tradicional.",
+        "Conocer el tamaño real del mercado global y europeo a 2025–2026 y por qué crece.",
+        "Identificar los dos grandes campos de juego: open web vs. walled gardens.",
+        "Salir con una idea estratégica clara de por qué el programmatic ha vuelto al centro del marketing digital."
+      ],
+      "structure": [
+        "0:00 – 2:00 · Apertura: por qué este curso y por qué importa el programmatic en 2026",
+        "2:00 – 6:00 · Qué es programmatic: definición operativa + evolución (RTB → header bidding → programmatic guaranteed)",
+        "6:00 – 11:00 · Cifras de mercado: global, EE.UU. y Europa (IAB Europe AdEx 2024)",
+        "11:00 – 15:00 · Walled gardens vs open web: por qué este split define la estrategia",
+        "15:00 – 18:00 · Los tres motores actuales: CTV, retail media e IA",
+        "18:00 – 20:00 · Cierre + preguntas para la próxima clase"
+      ],
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. Apertura: por qué este curso"
+        },
+        {
+          "type": "p",
+          "text": "La compra programática dejó de ser un experimento hace años. En 2026 es la columna vertebral de la publicidad digital: aproximadamente el 91% del display en Estados Unidos se compra de forma programática, y el mercado europeo de digital advertising superó por primera vez los 100.000 millones de euros en 2024, con 15.400 millones específicamente programáticos. Pero también es una industria que ha cambiado profundamente en los últimos 18 meses: la decisión de Google de no eliminar las cookies de terceros, la consolidación brutal de holding companies (fusión Omnicom + IPG en noviembre 2025), la explosión de retail media y la integración masiva de IA en el bidding y en la creatividad reescribieron el manual."
+        },
+        {
+          "type": "p",
+          "text": "Este curso está diseñado desde una perspectiva estratégica y consultiva. No vas a aprender a operar una campaña en The Trade Desk paso a paso; vas a entender qué decisiones tiene que tomar alguien que evalúa partners, presupuestos, arquitectura de stack y prioridades de inversión. El foco es B2B SaaS, con énfasis en el contexto regulatorio europeo, y dos hilos conductores: cómo la inteligencia artificial está rediseñando el ecosistema, y cómo la fragmentación de identidad post-cookie obliga a repensar todo el modelo."
+        },
+        {
+          "type": "h2",
+          "text": "2. ¿Qué es programmatic, exactamente?"
+        },
+        {
+          "type": "p",
+          "text": "Programmatic es la compra automatizada de espacios publicitarios mediante software y subastas en tiempo real. En lugar de negociar manualmente un banner con un editor concreto, una plataforma (DSP) compite por impresiones individuales en menos de 100 milisegundos contra otros compradores. Cada impresión se subasta por separado: el sistema evalúa quién es ese usuario (o, post-cookie, qué contexto rodea esa impresión), cuál es el valor probable de mostrarle un anuncio, y cuánto pujar."
+        },
+        {
+          "type": "p",
+          "text": "La evolución importante para entender el presente es esta cadena: en los años 2010-2015 dominaba el Real-Time Bidding clásico de subasta de segundo precio, donde el ganador pagaba un céntimo más que el segundo mejor postor. A partir de 2017-2019 la industria migró al header bidding, una técnica en la que el publisher invita a varios SSPs a pujar simultáneamente antes de servir el anuncio, y luego al modelo de subasta de primer precio. Hoy convive con formatos llamados programmatic direct, programmatic guaranteed y private marketplaces (PMPs), que son acuerdos directos pero ejecutados a través de la misma infraestructura técnica."
+        },
+        {
+          "type": "p",
+          "text": "La idea importante para un perfil consultivo: programmatic no es un canal, es una forma de comprar. Hoy se compra programáticamente en display, video, CTV, audio, DOOH y retail media. La pregunta estratégica ya no es '¿hacemos programmatic?', sino '¿qué porcentaje de cada canal compramos programáticamente y a través de qué stack?'"
+        },
+        {
+          "type": "h2",
+          "text": "3. Tamaño del mercado: global, EE.UU., Europa"
+        },
+        {
+          "type": "p",
+          "text": "Las cifras a manejar como referencia 2025–2026, agregadas de eMarketer, Statista, IAB Europe y WPP Media:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Mercado programático global: aproximadamente 595.000–725.000 millones USD según el scope; eMarketer da 614B en 2025 y 725B previstos en 2026. Hay fuentes que llegan a 1,1 billones incluyendo search y walled gardens completos.",
+            "Europa (IAB Europe AdEx 2024, publicado mayo 2025): mercado digital total europeo = €118.900 millones (+13,2% YoY). Programmatic puro = €15.400 millones (+18,4%). 21 de 30 mercados europeos crecieron a doble dígito.",
+            "Estados Unidos: 91,3% del display digital es programmatic. Europa: ~52–55% (todavía más reservation/direct deal, especialmente en Alemania y Francia).",
+            "Reparto por canal en EE.UU. 2025: Retail Media $60,3B / CTV $33,4B / Audio digital ~$2,3B / DOOH $2B / Native+Display el grueso restante."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Un dato que conviene memorizar: en 2025, retail media superó por primera vez al gasto total en televisión (incluyendo streaming) a nivel global, según WPP Media (la antigua GroupM). Esto cambia la jerarquía mental que muchos profesionales todavía tienen heredada de los años 2010, cuando 'programmatic = display banners en open web'."
+        },
+        {
+          "type": "h2",
+          "text": "4. Walled gardens vs open web: el split que define todo"
+        },
+        {
+          "type": "p",
+          "text": "El segundo concepto clave es la división entre walled gardens y open web. Los walled gardens son ecosistemas cerrados donde una sola compañía controla la audiencia, el inventario, la tecnología de compra y la medición: Google (Search, YouTube, GDN), Meta (Facebook, Instagram, Reels), Amazon (Ads + DSP), TikTok y, en B2B, LinkedIn. El open web es todo lo demás: publishers, apps, CTV abierto, audio, DOOH, accesible vía DSPs como The Trade Desk, DV360 o Amazon DSP."
+        },
+        {
+          "type": "p",
+          "text": "Los datos relevantes: Google + Meta + Amazon capturan aproximadamente el 75% del ad revenue digital global (excluyendo China) en 2025. Los walled gardens en conjunto representan entre el 70% y el 80% del gasto programmatic global. Statista proyecta que llegarán al 83% en 2027. Pero los usuarios pasan entre el 55% y el 60% de su tiempo de pantalla en open web, lo que crea un mismatch estructural entre dónde está la atención y dónde va el dinero."
+        },
+        {
+          "type": "p",
+          "text": "Para un consultor B2B SaaS, esta tensión es la pregunta estratégica número uno: ¿qué porcentaje de tu inversión va a walled gardens (alta precisión de targeting y medición closed-loop, pero datos atrapados y dependencia de un solo proveedor) versus open web (más control, mejor precio CPM, pero atribución más compleja)?"
+        },
+        {
+          "type": "h2",
+          "text": "5. Los tres motores actuales de crecimiento"
+        },
+        {
+          "type": "p",
+          "text": "Si hay que quedarse con tres tendencias que están reescribiendo programmatic en 2025–2026, son estas:"
+        },
+        {
+          "type": "h3",
+          "text": "5.1. Connected TV (CTV)"
+        },
+        {
+          "type": "p",
+          "text": "CTV (anuncios servidos a televisores conectados a internet vía smart TV, dongle o consola) creció a $33.350M en EE.UU. 2025 y se proyecta $37.950M en 2026 (+14,5%). El 84-90% del inventario CTV ya se compra programáticamente. Netflix, Disney+, Amazon Prime Video, Max y Paramount+ están todos abiertos al ecosistema programático. The Trade Desk es el líder del CTV en open web, Amazon DSP es el más fuerte cuando el anunciante quiere comprar Prime Video + Twitch + IMDb TV."
+        },
+        {
+          "type": "h3",
+          "text": "5.2. Retail Media"
+        },
+        {
+          "type": "p",
+          "text": "Las redes de retail media (Amazon Ads, Walmart Connect, Target Roundel, Carrefour Links, Tesco Media) facturarán colectivamente $177.100M globales en 2025. Amazon Ads sola tiene 79,7% del market share US retail media. Crecen tan rápido porque los retailers monetizan su first-party data transaccional, que es inmune al colapso de la cookie y permite atribución closed-loop directa a venta."
+        },
+        {
+          "type": "h3",
+          "text": "5.3. Inteligencia Artificial"
+        },
+        {
+          "type": "p",
+          "text": "La IA ya no es una feature de un DSP, es la capa que decide qué pujar, cuánto, cuándo y con qué creatividad. Algunos puntos de impacto: The Trade Desk reporta 5x ROAS promedio en campañas optimizadas con su plataforma Kokai; Google DV360 con Enhanced Automation reduce un 60% el CPA mediano a nivel insertion order; Amazon DSP Performance+ mejora un 51% el coste de adquisición. En creatividad, herramientas como Pencil (Brandtech) reportan un 79% de aumento en ROAS gracias a generación de variantes con LLMs. Vamos a dedicarle dos clases enteras (3 y 4) a este tema, pero quédate con la idea de que la IA es transversal a todo el resto del curso."
+        },
+        {
+          "type": "h2",
+          "text": "6. Cierre y preguntas para la próxima clase"
+        },
+        {
+          "type": "p",
+          "text": "Resumiendo: programmatic en 2026 es un mercado de ~725.000M USD globales / €15.400M en Europa, donde el 91% del display estadounidense ya se compra automáticamente, los walled gardens absorben el 75–80% del gasto, y los motores de crecimiento son CTV, retail media e IA. Para un perfil consultivo, la primera decisión estratégica es siempre el split walled garden vs open web, y la segunda es qué porcentaje destinar a los canales emergentes."
+        },
+        {
+          "type": "p",
+          "text": "En la próxima clase nos metemos en el ecosistema técnico: DSPs, SSPs, ad exchanges, DMPs y clean rooms. Vas a entender por qué algunos DMPs cerraron en 2024 y por qué los CDPs y las clean rooms los reemplazaron."
+        }
+      ],
+      "keyData": [
+        "Mercado programmatic global 2026 (eMarketer): ~$725.000M USD",
+        "Europa total digital 2024 (IAB Europe AdEx): €118.900M",
+        "Europa programmatic puro 2024: €15.400M (+18,4% YoY)",
+        "% display US que es programmatic: 91,3%",
+        "% display Europa que es programmatic: 52–55%",
+        "Walled gardens share global: 75–80%",
+        "Retail media global 2025: $177.100M (supera a TV global)",
+        "CTV US 2025: $33,4B → $37,95B 2026 (+14,5%)",
+        "84–90% del inventario CTV se compra programáticamente"
+      ],
+      "recap": [
+        "Programmatic no es un canal, es una forma automatizada de comprar publicidad en cualquier canal.",
+        "El mercado europeo es más reservation/direct que el estadounidense — las cifras de penetración son diferentes.",
+        "El split walled gardens vs open web es la primera decisión estratégica de cualquier plan programmatic.",
+        "CTV + Retail Media + IA son los tres motores de crecimiento que cualquier consultor debe dominar."
+      ],
+      "resources": [
+        {
+          "label": "IAB Europe AdEx Benchmark 2024 Report",
+          "url": "https://iabeurope.eu/knowledge_hub/iab-europe-adex-benchmark-2024-report/"
+        },
+        {
+          "label": "eMarketer Worldwide Programmatic Ad Spending 2025",
+          "url": "https://www.emarketer.com/content/worldwide-programmatic-ad-spending-2025"
+        },
+        {
+          "label": "WPP Media (ex GroupM) This Year Next Year forecast",
+          "url": "https://www.aaaa.org/research-report/groupm-global-ad-spend-forecast/"
+        },
+        {
+          "label": "Statista Programmatic Advertising topic page",
+          "url": "https://www.statista.com/topics/2498/programmatic-advertising/"
+        },
+        {
+          "label": "Redseer — Walled Gardens vs Open Internet",
+          "url": "https://redseer.com/articles/the-internets-most-expensive-mismatch/"
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title": "El ecosistema en profundidad: DSPs, SSPs, exchanges, DMPs, CDPs y Clean Rooms",
+      "duration": "20 minutos",
+      "eyebrow": "Ecosistema",
+      "objectives": [
+        "Mapear con precisión cada nodo del ecosistema programático moderno.",
+        "Identificar los players líderes y su market share en 2025–2026.",
+        "Entender por qué los DMPs murieron y qué los reemplazó (CDPs + clean rooms).",
+        "Conocer el panorama de holding companies post-fusión Omnicom + IPG."
+      ],
+      "structure": [
+        "0:00 – 2:00 · Apertura: anatomía de una subasta RTB",
+        "2:00 – 6:00 · DSPs: Demand-Side Platforms y los tres líderes globales",
+        "6:00 – 9:00 · SSPs y ad exchanges",
+        "9:00 – 13:00 · La transición DMP → CDP → Clean Room",
+        "13:00 – 17:00 · Holding companies: el mapa post-Omnicom+IPG",
+        "17:00 – 20:00 · Cierre y cómo elegir partners desde una mirada consultiva"
+      ],
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. Anatomía de una subasta RTB en 100 ms"
+        },
+        {
+          "type": "p",
+          "text": "Imagina un usuario que abre una página de un publisher como The Guardian. Antes de que cargue el contenido, el navegador dispara una llamada a la integración del publisher (un ad tag o un wrapper de header bidding). Esa llamada llega a uno o varios SSPs (Supply-Side Platforms), que envían una solicitud de puja (bid request) a múltiples DSPs simultáneamente. Cada DSP tiene menos de 100 milisegundos para evaluar: ¿quién es este usuario o qué contexto rodea la impresión? ¿Coincide con alguno de los segmentos activos de mis anunciantes? ¿Cuál es el ROAS esperado? ¿Cuánto pujo?"
+        },
+        {
+          "type": "p",
+          "text": "Si el DSP decide pujar, envía la oferta. El SSP recoge todas las pujas, declara ganadora la más alta, y devuelve al navegador el anuncio. Todo el ciclo ocurre antes de que el usuario perciba que la página tarda en cargar. Hablamos de subastas que ocurren millones de veces por segundo en cada DSP grande. The Trade Desk procesa hasta 15 millones de oportunidades de bid por segundo."
+        },
+        {
+          "type": "h2",
+          "text": "2. DSPs: Demand-Side Platforms"
+        },
+        {
+          "type": "p",
+          "text": "Un DSP es la plataforma desde la que un anunciante (o su agencia) compra impresiones. Tres dominan el mercado open web en EE.UU. con un 86% de share combinado:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Google DV360 (Display & Video 360): ~47% market share, integrado en Google Marketing Platform, acceso prioritario a YouTube y Google AdX. CPM medio ~$0,89. Es la opción 'por defecto' cuando el cliente ya está fuertemente en Google.",
+            "Amazon DSP: ~20% market share, accede a inventory exclusivo (Amazon, IMDb TV, Prime Video, Twitch) más datos shopper únicos. CPM medio ~$1,17. Crecimiento agresivo gracias a la alianza con Netflix para inventario CTV.",
+            "The Trade Desk (TTD): ~19% market share, líder independiente, fuerte en CTV, audio, open web. CPM medio ~$1,07. La principal alternativa al duopolio Google–Amazon. Su plataforma Kokai es la referencia en IA aplicada al bidding."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Otros DSPs relevantes: Yahoo DSP (híbrido DSP+SSP, fuerte en publishers premium), StackAdapt (independiente canadiense, fuerte en native y mid-market), Viant (people-based, household graph, cotiza en NASDAQ). MediaMath quebró en 2023 — fue pionera pero ya no opera. Beeswax fue comprada por Comcast/FreeWheel y opera como 'bring your own bidder' para CTV."
+        },
+        {
+          "type": "p",
+          "text": "Decisión consultiva clave: la mayoría de empresas medianas y grandes corren al menos dos DSPs en paralelo, uno walled-garden-friendly (DV360 o Amazon) y uno open-web/CTV independiente (TTD). Apostar todo a uno es un riesgo de concentración."
+        },
+        {
+          "type": "h2",
+          "text": "3. SSPs y ad exchanges"
+        },
+        {
+          "type": "p",
+          "text": "Un SSP es la cara opuesta del DSP: la plataforma desde la que un publisher gestiona y monetiza su inventario. Un ad exchange es el marketplace donde se cruzan SSPs y DSPs vía subastas RTB. En la práctica la frontera entre SSP y exchange se ha difuminado y casi todos los grandes SSPs operan también su propio exchange."
+        },
+        {
+          "type": "p",
+          "text": "Players líderes (Forrester SSP Wave 2024 los clasifica como Leaders a PubMatic, Amazon Publisher Services y Magnite):"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Magnite: el mayor SSP independiente, fruto de la fusión de Rubicon Project + Telaria + SpotX. Líder en CTV. Revenue Q1 2025: $155,8M (+4% YoY).",
+            "PubMatic: SSP independiente cotizada (NASDAQ); fuerte en mobile, video y commerce media; tiene infraestructura propietaria, no en AWS, lo cual es un diferenciador de coste y margen.",
+            "Index Exchange: independiente, fuerte en header bidding y desktop premium.",
+            "OpenX: independiente, alcance de 240M usuarios mensuales en EE.UU.; fuerte en programmatic guaranteed.",
+            "Xandr (ahora Microsoft Advertising): adquirida por Microsoft a AT&T en 2022; integrada en Microsoft Advertising con foco en CTV (acuerdo Netflix–Microsoft) y curated marketplaces.",
+            "Equativ (ex Smart AdServer): SSP europeo (Francia) con foco en publishers locales y privacy-first; fusionado con Sharethrough en 2024.",
+            "Google Ad Manager (incluye AdX): sigue siendo el mayor por volumen total, aunque baja por presión antitrust."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "4. La transición DMP → CDP → Clean Room"
+        },
+        {
+          "type": "p",
+          "text": "Este es uno de los cambios de paradigma más importantes de los últimos cinco años y conviene tenerlo claro."
+        },
+        {
+          "type": "h3",
+          "text": "4.1. Los DMPs (Data Management Platforms) están en declive terminal"
+        },
+        {
+          "type": "p",
+          "text": "Los DMPs nacieron para gestionar audiencias basadas en cookies de tercero. Permitían a marcas y agencias construir segmentos cruzando datos behaviorales, comprar segmentos de terceros y activarlos en DSPs. El problema: la cookie murió (al menos en Safari, Firefox y muchos contextos móviles), GDPR cuestionó la legitimidad de buena parte del third-party data, y la propuesta de valor de un DMP se erosionó. Resultado:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Salesforce Audience Studio (ex Krux) cerró el 1 de febrero de 2024.",
+            "Adobe Audience Manager (AAM) está en sunset gestionado: Adobe empuja a clientes a su Real-Time CDP.",
+            "Oracle BlueKai cerró en 2022."
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "4.2. Los CDPs (Customer Data Platforms) ocupan el rol estratégico"
+        },
+        {
+          "type": "p",
+          "text": "Un CDP unifica datos first-party del cliente (web, app, CRM, transacciones, soporte) en un perfil persistente y los activa en sistemas downstream (DSPs, email, customer success). El Gartner Magic Quadrant CDP 2026 ubica como Leaders a Salesforce Data Cloud (único Leader del cuadrante), Adobe Real-Time CDP, Treasure AI, Hightouch, Oracle y Uniphore. Twilio Segment es el líder mid-market warehouse-first. mParticle y Tealium siguen relevantes pero perdieron posición Leader."
+        },
+        {
+          "type": "h3",
+          "text": "4.3. Las Clean Rooms son la nueva pieza crítica"
+        },
+        {
+          "type": "p",
+          "text": "Una clean room es un entorno seguro donde dos o más partes pueden cruzar datasets sin que ninguna exponga su raw data. Útiles para que un anunciante mida campañas con datos de un walled garden (Ads Data Hub de Google, Meta Advanced Analytics) o para colaboración entre marcas y publishers. Players:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "AWS Clean Rooms y Snowflake Data Clean Rooms: hyperscalers ofreciendo clean rooms 'out of the box'. Han desplazado a vendors independientes.",
+            "LiveRamp Safe Haven: Leader independiente tras adquirir Habu en enero 2024. Nombrada Leader en IDC MarketScape 2025.",
+            "InfoSum: adquirida por WPP en 2024. Ahora es la capa de datos base del operating system WPP Open.",
+            "Google Ads Data Hub (ADH) y Meta Advanced Analytics: clean rooms cerradas de cada walled garden."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "AdExchanger declaró en 2025 'el fin de la era del clean room como producto independiente' — la funcionalidad se está embebiendo en CDPs y data clouds. Lo importante para un consultor: ya no se elige un clean room aislado; se elige una arquitectura de datos completa donde el clean room es una capa."
+        },
+        {
+          "type": "h2",
+          "text": "5. Holding companies post Omnicom + IPG"
+        },
+        {
+          "type": "p",
+          "text": "En noviembre de 2025, Omnicom completó la adquisición de IPG por aproximadamente $30.000M. Es la fusión más grande de la historia de la industria publicitaria. Hasta ese momento el líder global era WPP (rebautizado WPP Media en 2025); tras la fusión, Omnicom Media Group se convierte en el número uno mundial."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Omnicom Media Group (post-IPG): combina Omni (Annalect) + Acxiom (la base people-based más grande del mundo, traída desde IPG). Líder global desde noviembre 2025.",
+            "WPP Media (ex-GroupM): gestiona más de $60.000M USD anuales en 80 mercados; integra InfoSum como clean room interna; líder global hasta noviembre 2025.",
+            "Publicis Groupe: ha invertido más de $12.000M en data e IA; ancla en Epsilon (adquirida por $4.400M en 2019) + CitrusAd (retail media) + Marcel (AI platform). Líder operacional en retail media.",
+            "Dentsu (con Merkle como activo CRM/data): performance reciente más débil que competidores.",
+            "Havas (Vivendi): menor escala global, foco en converged identity."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "6. Cierre: cómo elegir partners desde una mirada consultiva"
+        },
+        {
+          "type": "p",
+          "text": "Tres preguntas para evaluar cualquier stack programmatic:"
+        },
+        {
+          "type": "ol",
+          "items": [
+            "¿Qué DSP(s) usamos y por qué? Hay que justificar la mezcla walled-garden + independiente.",
+            "¿Dónde viven los datos del cliente? Si todavía hay un DMP, hay deuda técnica. Lo correcto es CDP + clean room.",
+            "¿Quién es la holding o agencia que opera? Tras la fusión Omnicom + IPG el panorama de poder de negociación con plataformas cambió."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "En la próxima clase entramos en la primera parte del corazón del curso: cómo la IA opera dentro de los DSPs para decidir cuánto pujar, a quién y por qué. Vas a ver los algoritmos por detrás de Kokai, Performance+ y Enhanced Automation, y por qué el last-click attribution está oficialmente muerto."
+        }
+      ],
+      "keyData": [
+        "DSP share US: DV360 ~47% / Amazon DSP ~20% / TTD ~19% (86% combinado)",
+        "Magnite Q1 2025 revenue: $155,8M",
+        "Salesforce Audience Studio cerró el 1 feb 2024",
+        "LiveRamp adquirió Habu en enero 2024",
+        "InfoSum fue adquirida por WPP en 2024",
+        "Omnicom + IPG fusión completada nov 2025 por ~$30B",
+        "WPP Media gestiona >$60.000M anuales en 80 mercados"
+      ],
+      "recap": [
+        "DSP = lado anunciante; SSP = lado publisher; exchange = el marketplace.",
+        "Tres DSPs concentran el 86% del mercado US: DV360, Amazon DSP, TTD.",
+        "Los DMPs murieron; CDPs y clean rooms tomaron su sitio.",
+        "El mapa de holding companies cambió en noviembre 2025 con la fusión Omnicom+IPG."
+      ],
+      "resources": [
+        {
+          "label": "Forrester SSP Wave via AdExchanger",
+          "url": "https://www.adexchanger.com/programmatic/forresters-ssp-wave-lists-the-top-10-ssps-with-google-at-the-bottom-really/"
+        },
+        {
+          "label": "Gartner Magic Quadrant CDP 2026 (CXToday)",
+          "url": "https://www.cxtoday.com/customer-analytics-intelligence/gartner-magic-quadrant-cdp-2026/"
+        },
+        {
+          "label": "AdExchanger – end of the clean room era",
+          "url": "https://www.adexchanger.com/measurement/why-2025-marked-the-end-of-the-data-clean-room-era/"
+        },
+        {
+          "label": "AdExchanger – LiveRamp acquires Habu",
+          "url": "https://www.adexchanger.com/platforms/liveramp-acquires-habu-as-walled-gardens-put-the-squeeze-on-indie-data-collaboration-tech/"
+        },
+        {
+          "label": "Digiday – Acxiom data dilemma Omnicom-IPG",
+          "url": "https://digiday.com/media-buying/the-acxiom-data-dilemma-behind-omnicoms-market-making-ipg-acquisition/"
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title": "AI en bidding, optimización y attribution",
+      "duration": "20 minutos",
+      "eyebrow": "Cerebro IA",
+      "objectives": [
+        "Entender cómo el machine learning ha pasado a ser el cerebro del DSP moderno.",
+        "Conocer en detalle las tres plataformas IA-first líderes: Kokai (TTD), Enhanced Automation (DV360) y Performance+ (Amazon DSP).",
+        "Comprender por qué el last-click murió y qué lo reemplaza: MMM moderno + incrementality.",
+        "Salir con un criterio para evaluar cualquier 'feature IA' que ofrezca un vendor."
+      ],
+      "structure": [
+        "0:00 – 3:00 · Bid shading y predicción de puja con ML",
+        "3:00 – 8:00 · Las tres plataformas IA-first líderes",
+        "8:00 – 12:00 · Predictive audiences vs lookalikes clásicos",
+        "12:00 – 16:00 · El final del last-click: MMM moderno e incrementality",
+        "16:00 – 18:00 · Forecast y pacing con IA",
+        "18:00 – 20:00 · Cierre con un framework para evaluar 'IA real' vs 'IA de marketing'"
+      ],
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. Bid shading: el ML que evita sobrepagar"
+        },
+        {
+          "type": "p",
+          "text": "Cuando la industria migró a subastas de primer precio, los anunciantes tenían un problema nuevo: si pujas tu valor máximo (lo que estás dispuesto a pagar), pagas exactamente eso, aunque el segundo postor hubiera pujado mucho menos. La solución es el bid shading: un modelo ML que estima cuánto van a pujar los competidores y baja tu puja a un nivel óptimo donde ganas con alta probabilidad pero pagas menos."
+        },
+        {
+          "type": "p",
+          "text": "El modelo se entrena con datos históricos del bidstream: cuántos competidores pujan típicamente por impresiones similares, en qué rangos, con qué frecuencia. Investigación reciente (2025) introduce modelos generativos con sistemas de recompensa para bid shading robusto a la distribución (papers en arXiv 2410.14864 y 2508.06550). Todos los DSPs grandes ofrecen bid shading 'out of the box' — la pregunta consultiva no es 'usamos bid shading sí o no', es 'qué tan sofisticado es el algoritmo del DSP que elegimos'."
+        },
+        {
+          "type": "h2",
+          "text": "2. Las tres plataformas IA-first líderes"
+        },
+        {
+          "type": "h3",
+          "text": "2.1. The Trade Desk – Kokai"
+        },
+        {
+          "type": "p",
+          "text": "Kokai es la plataforma flagship de TTD lanzada en 2023–2024, evolución de Solimar. Su motor interno se llama Koa y procesa trillones de señales del bidstream para ajustar pujas, evaluar inventario y priorizar audiencias. Datos publicados por TTD sobre 665 campañas analizadas en EE.UU. y Canadá en 2025: 5x ROAS promedio, 43% menor CPUR (cost per unique reach), 24% menor CPC, 27% menor CPA."
+        },
+        {
+          "type": "p",
+          "text": "Lo importante de Kokai para un consultor: TTD se ha posicionado como 'la IA de la open internet'. Mientras DV360 y Amazon DSP juegan dentro de sus walled gardens, Kokai promete optimización cross-publisher, cross-device y cross-canal."
+        },
+        {
+          "type": "h3",
+          "text": "2.2. Google DV360 – Enhanced Automation y Custom Bidding"
+        },
+        {
+          "type": "p",
+          "text": "En mayo de 2025 Google deprecó el manual CPM con bid multipliers en DV360 y convirtió el bidding AI-driven en default. Los clientes que activaron Enhanced Automation reportaron un 60% de reducción en CPA mediano a nivel insertion order. Custom Bidding va un paso más allá: permite escribir scripts con la lógica de negocio (por ejemplo, 'priorizá usuarios con LTV proyectado >X que estén en su segunda sesión esta semana') y dejar que el DSP optimice contra ese score."
+        },
+        {
+          "type": "h3",
+          "text": "2.3. Amazon DSP – Performance+, Brand+, Ads Agent"
+        },
+        {
+          "type": "p",
+          "text": "Amazon Performance+ asigna scores predictivos en tiempo real basados en probabilidad de conversión, alimentado con datos transaccionales propios de Amazon. Cifras publicadas: 51% de mejora en coste de adquisición vs campañas legacy de Amazon DSP; modelos ML lanzados en 2025 lograron +12,6% CTR, +34,1% ROAS y -24,7% CPM. En noviembre 2025 Amazon lanzó su Ads Agent, un agente de IA conversacional que automatiza tareas de campaña dentro de Amazon Marketing Cloud y AI Targeting basado en lenguaje natural."
+        },
+        {
+          "type": "h2",
+          "text": "3. Predictive audiences vs lookalikes clásicos"
+        },
+        {
+          "type": "p",
+          "text": "Los lookalikes clásicos hacen matching estadístico sobre atributos behaviorales históricos de una audiencia semilla. La pregunta es: '¿quién es parecido a mis clientes actuales?'. Las predictive AI audiences hacen una pregunta distinta: '¿quién es probable que haga X en el futuro?' (comprar, hacer upgrade, churn). El input incluye señales conductuales, contextuales y first-party; el output es un score de propensión que se activa downstream."
+        },
+        {
+          "type": "p",
+          "text": "Plataformas como Adobe Real-Time CDP (con Customer AI integrado), Lytics y Salesforce Data Cloud actúan como 'feeders' que envían señales unificadas a modelos predictivos. DV360 incorpora Optimized Targeting, su motor ML que expande audiencias automáticamente más allá de las listas predefinidas usando señales de Floodlight."
+        },
+        {
+          "type": "p",
+          "text": "La diferencia importante para una conversación con vendors: si te ofrecen 'AI audiences' pero el input solo son cookies y eventos básicos, es esencialmente un lookalike rebautizado. La verdadera predictive audience requiere CDP con eventos enriquecidos + un modelo que prediga conducta futura, no solo similitud."
+        },
+        {
+          "type": "h2",
+          "text": "4. El final del last-click: MMM moderno e incrementality"
+        },
+        {
+          "type": "p",
+          "text": "Last-click attribution (atribuir el 100% del crédito al último touchpoint antes de la conversión) sobreatribuye al fondo del funnel y subestima los medios de awareness. Estudios documentaron que hasta el 60% del gasto digital se asigna mal con last-touch. Desde julio de 2023, Google Ads marca Data-Driven Attribution (DDA) como default para nuevas conversion actions."
+        },
+        {
+          "type": "h3",
+          "text": "4.1. Multi-touch attribution (MTA) con ML"
+        },
+        {
+          "type": "p",
+          "text": "MTA reparte crédito entre touchpoints usando ML. DDA en GA4 es la implementación más conocida. Limitaciones serias: requiere mínimo 600 conversiones/mes, ventana de solo 90 días, es black-box (no auditas el modelo) y no ve datos offline ni CRM. Solo el 24% de las organizaciones B2B en UK usan MTA según Gartner 2025. MarTech declaró en 2024–2025: 'es hora de superar MTA' en favor de MMM + incrementality."
+        },
+        {
+          "type": "h3",
+          "text": "4.2. Media Mix Modeling moderno: Robyn, Meridian, Recast"
+        },
+        {
+          "type": "p",
+          "text": "MMM toma series temporales de gasto e impacto y modela contribución por canal. La nueva ola es de modelos open-source y always-on:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Meta Robyn: open-source en R y Python. Usa optimización automatizada de hiperparámetros con Nevergrad. Ideal SMB / mid-market por facilidad.",
+            "Google Meridian: lanzado en 2024 como sucesor open-source de LightweightMMM. Regresión Bayesiana — permite incorporar priors de negocio y manejar incertidumbre/datos faltantes. Apto para anunciantes sofisticados.",
+            "Recast: MMM always-on con modelo Bayesiano dinámico que se reentrena continuamente."
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "4.3. Incrementality: geo experiments y holdouts"
+        },
+        {
+          "type": "p",
+          "text": "El gold standard actual son los geo experiments (también GeoLift en el ecosistema Meta): divides mercados en grupos test/control, corres campañas solo en los test y comparas el lift real. Permite medir causalidad sin cookies. Con synthetic controls y selección inteligente, el holdout puede mantenerse por debajo del 15% del spend. Holdout tests clásicos (a nivel usuario) siguen vigentes en walled gardens (Meta Conversion Lift, Google Brand Lift) pero son más vulnerables a la pérdida de identifiers."
+        },
+        {
+          "type": "h2",
+          "text": "5. Forecast y pacing con IA"
+        },
+        {
+          "type": "p",
+          "text": "Los DSPs predicen disponibilidad de inventario con modelos de series temporales que combinan estacionalidad, eventos, competencia en subasta y consumo. Amazon DSP lanzó su Forecasting API en disponibilidad general en 2025, ofreciendo estimaciones a nivel order de impresiones disponibles, alcance y CPM esperado. StackAdapt ofrece forecasting integrado al planning. McKinsey estima que el AI-powered forecasting reduce errores 20–50%, baja unavailability hasta 65% y recorta costes de inventario 10–15%."
+        },
+        {
+          "type": "h2",
+          "text": "6. Framework para evaluar 'IA real' vs 'IA de marketing'"
+        },
+        {
+          "type": "p",
+          "text": "Cuando un vendor te diga 'tenemos IA', pregunta:"
+        },
+        {
+          "type": "ol",
+          "items": [
+            "¿Qué decisión está tomando el modelo? (puja, score de audiencia, asignación de presupuesto, creatividad)",
+            "¿Sobre qué datos se entrena? (bidstream propio, datos del cliente, datos sintéticos)",
+            "¿Qué métrica concreta mejora y contra qué baseline? (CPA, ROAS, viewability, lift)",
+            "¿Es black-box o auditable? (importante para industries reguladas)",
+            "¿Cómo se reentrena y con qué frecuencia? (mensual, continuo, on-event)"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Si el vendor no puede responder estas cinco preguntas, lo que tiene es 'IA de marketing'. La próxima clase es la otra mitad de la historia: la IA generativa que está reescribiendo la creatividad y el formato dinámico."
+        }
+      ],
+      "keyData": [
+        "TTD Kokai: 5x ROAS, -43% CPUR, -24% CPC, -27% CPA (665 campañas US/CA 2025)",
+        "DV360 Enhanced Automation: -60% CPA mediano por insertion order",
+        "Amazon DSP Performance+: -51% CPA vs campañas legacy",
+        "Last-click sobre-atribuye hasta 60% del gasto digital",
+        "Solo 24% de orgs B2B UK usan MTA (Gartner 2025)",
+        "AI forecasting reduce errores 20–50% (McKinsey)"
+      ],
+      "recap": [
+        "El bidding moderno es ML por defecto: bid shading + predictive scoring + custom bidding.",
+        "Predictive audiences ≠ lookalikes; requieren CDP enriquecido + modelo de propensión.",
+        "Last-click murió. MMM (Robyn/Meridian/Recast) + geo experiments es el nuevo estándar.",
+        "Evalúa cualquier 'IA' por las 5 preguntas: decisión, datos, métrica, auditabilidad, reentrenamiento."
+      ],
+      "resources": [
+        {
+          "label": "TTD Kokai AI ROAS report",
+          "url": "https://www.thetradedesk.com/resources/how-kokai-ai-drives-roas-advertisers"
+        },
+        {
+          "label": "PPC Land – DV360 60% cost reduction",
+          "url": "https://ppc.land/dv360-reports-60-cost-reduction-with-ai-enhanced-automation/"
+        },
+        {
+          "label": "Amazon Ads – DSP Performance+",
+          "url": "https://advertising.amazon.com/library/guides/dsp-performance-plus"
+        },
+        {
+          "label": "Eliya – Meridian vs Robyn",
+          "url": "https://www.eliya.io/blog/media-mix-modeling/Meridian-vs-Robyn"
+        },
+        {
+          "label": "Lifesight – Best Incrementality Tools 2025",
+          "url": "https://lifesight.io/blog/best-incrementality-testing-tools/"
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title": "AI generativa en creatividades: DCO 2.0",
+      "duration": "20 minutos",
+      "eyebrow": "Creative AI",
+      "objectives": [
+        "Diferenciar el DCO clásico del DCO con LLMs y modelos generativos.",
+        "Conocer los vendors de creative AI líderes y para qué sirve cada uno.",
+        "Entender el AI generativo nativo dentro de DSPs (Advantage+, PMax Gemini, Kokai Creative).",
+        "Identificar las limitaciones reales: brand safety, MFA generativo, hallucinations."
+      ],
+      "structure": [
+        "0:00 – 3:00 · El cambio de DCO clásico a DCO 2.0",
+        "3:00 – 10:00 · Vendors especializados: Smartly, Pencil, Persado, Jasper, Vidmob",
+        "10:00 – 14:00 · IA creativa nativa en plataformas: Meta Advantage+, Google PMax/Gemini, TTD Kokai",
+        "14:00 – 17:00 · Personalización a escala: cómo se produce, casos y limitaciones",
+        "17:00 – 20:00 · Brand safety inverso: el problema MFA generativo"
+      ],
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. De DCO clásico a DCO 2.0"
+        },
+        {
+          "type": "p",
+          "text": "El DCO (Dynamic Creative Optimization) clásico funcionaba así: un diseñador creaba 5–10 layouts maestros, se conectaba un product feed (CSV/XML con catálogo) y el sistema rotaba combinaciones de imagen, headline y CTA según reglas estáticas (geo, hora, clima, audiencia). El resultado era 'la misma plantilla con variaciones limitadas'. Tu rango de variantes nunca excedía lo que existía en el feed multiplicado por las reglas."
+        },
+        {
+          "type": "p",
+          "text": "DCO 2.0 usa LLMs (GPT-4/5, Gemini, Claude) + modelos de imagen (Stable Diffusion, Adobe Firefly, DALL-E, Imagen 3) + modelos de video (Runway, Sora, Veo) para generar variantes ilimitadas on-the-fly. No solo combina assets existentes: crea copy, backgrounds, voiceovers y video edits específicos para cada segmento, momento o incluso impresión individual."
+        },
+        {
+          "type": "p",
+          "text": "Adopción: el 82% de los anunciantes usaba DCO en 2024; el 99% de las agencias lo considera relevante en su mix (encuesta Digiday/Clinch). El mercado DCO crece a CAGR ~13,7%, proyectado a $1,16B en 2026."
+        },
+        {
+          "type": "h2",
+          "text": "2. Vendors especializados de creative AI"
+        },
+        {
+          "type": "h3",
+          "text": "2.1. Smartly.io"
+        },
+        {
+          "type": "p",
+          "text": "Genera miles de variantes personalizadas a partir de templates + product feeds. Soporta DCO en Meta, TikTok, YouTube, Pinterest, Google Performance Max y retail media UK. Es el referente para retail y e-commerce que necesitan personalización masiva."
+        },
+        {
+          "type": "h3",
+          "text": "2.2. Pencil (Brandtech Group)"
+        },
+        {
+          "type": "p",
+          "text": "Adquirida en 2023 por Brandtech (founder David Jones). Construida sobre OpenAI + Stable Diffusion + Runway. Pencil Pro genera ads multimodales (copy + imagen + video) con predicción de engagement. Cifras publicadas: 48% de bajada en CPA, 79% de incremento en ROAS, 2x reducción en coste y tiempo de producción. En mayo 2025 anunció alianza con BCG para escalar adopción IA en marketing."
+        },
+        {
+          "type": "h3",
+          "text": "2.3. Persado"
+        },
+        {
+          "type": "p",
+          "text": "Especialista en copy generativo causal. Entrenado sobre 330 mil millones de interacciones y más de 1 millón de A/B tests. Reporta 41% de uplift promedio en conversiones y supera al copy humano y otros AI el 96% del tiempo. Caso documentado: Tapestry Inc. (Coach, Kate Spade) +42% de conversión."
+        },
+        {
+          "type": "h3",
+          "text": "2.4. Jasper for Ads"
+        },
+        {
+          "type": "p",
+          "text": "Evolucionó de copywriter genérico a marketing copilot end-to-end. Jasper Art + Ads (2025) genera visuals de producto y copy con consistencia de marca para empresas que prefieren un solo proveedor de creatividad IA."
+        },
+        {
+          "type": "h3",
+          "text": "2.5. Vidmob"
+        },
+        {
+          "type": "p",
+          "text": "Creative Data Platform que disecciona video ads con IA para identificar qué elementos visuales/audio drivean performance. Lanzó Creative Data Collaboratory (2025) con interfaz conversacional."
+        },
+        {
+          "type": "h3",
+          "text": "2.6. Celtra"
+        },
+        {
+          "type": "p",
+          "text": "Foco en creative automation + workflow para agencias y marcas con equipos distribuidos. Fuerte en gestión colaborativa y versioning multi-mercado."
+        },
+        {
+          "type": "h2",
+          "text": "3. IA creativa nativa dentro de DSPs y plataformas"
+        },
+        {
+          "type": "h3",
+          "text": "3.1. Meta Advantage+ Creative"
+        },
+        {
+          "type": "p",
+          "text": "Genera y mejora variantes (single image, video, carousel) automáticamente. Un foto-producto se transforma en múltiples versiones con backgrounds, colores y layouts diferentes. En 2025 se expandió a lead generation. Para B2B SaaS con ad spend significativo en Meta, Advantage+ es la opción 'cero esfuerzo' de creative AI."
+        },
+        {
+          "type": "h3",
+          "text": "3.2. Google Performance Max + Gemini"
+        },
+        {
+          "type": "p",
+          "text": "Assets de texto e imagen generados dentro del setup. Dato relevante: los anunciantes que usan assets de Gemini tienen un 63% más de probabilidad de publicar con Ad Strength 'Good/Excellent'. En mayo 2025 Google anunció +90 mejoras en PMax con +10% conversiones."
+        },
+        {
+          "type": "h3",
+          "text": "3.3. TTD Kokai Creative"
+        },
+        {
+          "type": "p",
+          "text": "Módulo creativo integrado al planning de Kokai. La IA evalúa qué variantes ganan, recomienda nuevas iteraciones y aplica DCO en CTV, audio y display de open web. Es la propuesta de TTD para que un cliente no necesite un vendor creativo aparte."
+        },
+        {
+          "type": "h2",
+          "text": "4. Personalización a escala: cómo se produce"
+        },
+        {
+          "type": "p",
+          "text": "El flujo moderno combina seis capas:"
+        },
+        {
+          "type": "ol",
+          "items": [
+            "Audience segmentation desde CDP o DSP, genera N personas.",
+            "Brand inputs (guidelines, tone-of-voice, brand kit) que constrains al LLM.",
+            "Product feed que aporta ground-truth de SKUs, precios y claims.",
+            "Generative engine que produce copy + visuals personalizados por segmento.",
+            "Predictive scoring (estilo Pencil/Persado) que predice qué variante engagear antes de servirla.",
+            "Iteración performance-driven: el ML reentrena con métricas reales."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Casos B2B SaaS: personalización por industry vertical (FinTech, Healthcare, RetailTech), por role (CFO vs CMO vs CTO) y por stage del funnel (awareness vs decision). LLMs reescriben headlines y value props con consistencia de marca."
+        },
+        {
+          "type": "h2",
+          "text": "5. Limitaciones y riesgos"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Brand safety inverso: el LLM puede generar copy off-brand o factualmente erróneo (hallucinations).",
+            "Aprobación legal/regulatoria: industries regulados (financiero, pharma) requieren review humano; por eso Persado se diferencia con foco en regulated brands.",
+            "Sameness creativa: si todos usan los mismos modelos base, la diferenciación se erosiona.",
+            "Métricas de attention y memorability no siempre mejoran con volumen — más variantes ≠ mejor recall."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "6. El problema MFA generativo"
+        },
+        {
+          "type": "p",
+          "text": "Made-for-Advertising sites (MFA) son sitios web optimizados para monetización publicitaria, no para audiencia genuina: ratio ad/content alto, contenido reciclado, traffic comprado. En Q1 2025 los MFA sites representaron el 10% del global ad spend ($701M), y $26.800M se siguen desperdiciando en programmatic pese al crackdown. El gasto mediano en MFA bajó al 0,8% (desde 15% dos años antes) en mercados que aplican exclusion lists agresivas."
+        },
+        {
+          "type": "p",
+          "text": "La IA generativa empeora el problema: ahora cualquiera puede producir contenido sintético reciclable a escala industrial. Vendors de brand safety que conviene conocer:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Integral Ad Science (IAS): modelos que analizan texto, diseño visual y patrones conductuales para flaguear MFA. Expandió controles en Meta en 2025.",
+            "DoubleVerify: Universal Content Intelligence combina computer vision, OCR y NLP para web, mobile, CTV y social. Reforzó su solución MFA con categorías tiered.",
+            "Scope3: adquirió Adloox y lanzó en 2025 sus AI Agents for Brand Safety, integrado nativamente en TTD y Google.",
+            "Channel Factory: lanzó en mayo 2025 Channel Factory Intelligence, '10x AI Data Analyst', con análisis brand-suitability a nivel video refrescado cada 4 horas."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Y como reverso preocupante: Adalytics publicó en 2025 reportes cuestionando la eficacia de IAS y DoubleVerify cuando ads aparecieron junto a contenido explícito. Legisladores estadounidenses pidieron explicaciones. La lección consultiva: el brand safety automatizado IA-driven no es infalible; sigue requiriendo auditoría humana periódica."
+        }
+      ],
+      "keyData": [
+        "82% de anunciantes usaba DCO en 2024",
+        "Mercado DCO crece a CAGR ~13,7%, proyectado a $1,16B en 2026",
+        "Pencil Pro: -48% CPA, +79% ROAS, 2x reducción tiempo producción",
+        "Persado: +41% uplift promedio, supera al humano 96% de las veces",
+        "Google PMax + Gemini: 63% más probabilidad de Ad Strength Good/Excellent",
+        "MFA en Q1 2025: 10% del global ad spend; $26.800M desperdiciados"
+      ],
+      "recap": [
+        "DCO 2.0 = LLMs + modelos de imagen/video + product feed + brand kit, no más reglas estáticas.",
+        "Tres familias de creative AI: vendors especializados (Pencil, Persado, Smartly), nativos de DSP (Advantage+, PMax, Kokai Creative) y herramientas verticales (Vidmob para video, Celtra para workflow).",
+        "Limitaciones reales: hallucinations, sameness, compliance regulatoria.",
+        "El MFA generativo es el nuevo frente de brand safety; ninguna solución es infalible."
+      ],
+      "resources": [
+        {
+          "label": "Smartly – What is DCO",
+          "url": "https://www.smartly.io/resources/what-is-dynamic-creative-optimisation-dco-how-uk-advertisers-scale-personalisation-with-ai"
+        },
+        {
+          "label": "AdExchanger – Brandtech acquires Pencil",
+          "url": "https://www.adexchanger.com/ai/the-brandtech-group-snatches-up-generative-ai-ad-platform/"
+        },
+        {
+          "label": "Persado website",
+          "url": "https://www.persado.com/"
+        },
+        {
+          "label": "AdWeek – Scope3 vs IAS/DV",
+          "url": "https://www.adweek.com/programmatic/scope3-ias-doubleverify-ai-agents-brand-safety/"
+        },
+        {
+          "label": "Digiday – $26.8B MFA waste",
+          "url": "https://digiday.com/media-buying/ad-tech-briefing-26-8-billion-still-wasted-in-programmatic-despite-mfa-crackdown/"
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title": "Identity post-cookie y privacy en la era europea",
+      "duration": "20 minutos",
+      "eyebrow": "Post-cookie",
+      "objectives": [
+        "Conocer el estado real del third-party cookie en 2026 y por qué Google se retractó.",
+        "Manejar el menú de alternative IDs disponibles y cuándo usar cada uno.",
+        "Entender cómo las clean rooms y el contextual moderno reemplazan parte del valor perdido.",
+        "Tener claro el marco regulatorio europeo (GDPR, DMA, TCF) y las multas precedente."
+      ],
+      "structure": [
+        "0:00 – 3:00 · Estado actual del third-party cookie y el final del Privacy Sandbox",
+        "3:00 – 6:00 · Safari ITP, Firefox ETP y mobile (ATT, GAID)",
+        "6:00 – 11:00 · Alternative IDs: UID2, EUID, ID5, LiveRamp, ConnectID",
+        "11:00 – 14:00 · Clean rooms y data collaboration",
+        "14:00 – 17:00 · GDPR, DMA y el régimen regulatorio europeo",
+        "17:00 – 20:00 · Contextual moderno con IA: el resurgir post-cookie"
+      ],
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. El estado real del third-party cookie y el final del Privacy Sandbox"
+        },
+        {
+          "type": "p",
+          "text": "Durante cinco años, la industria publicitaria se preparó para 'la muerte de la cookie de tercero en Chrome'. La realidad de 2025–2026 es muy diferente y conviene aclararla:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Julio 2024: Google anunció que no eliminaría las cookies de terceros y propuso un modelo de 'user choice' (un prompt en Chrome donde el usuario decide).",
+            "22 de abril de 2025: Google fue más allá y confirmó que ni siquiera introducirá ese prompt. Los usuarios seguirán gestionando cookies a través de los ajustes de 'Privacidad y Seguridad' en Chrome. El comportamiento por defecto — permitir cookies de terceros — se mantiene sin cambios.",
+            "17 de octubre de 2025: Google retiró formalmente las APIs principales del Privacy Sandbox (Topics, Protected Audience y Attribution Reporting) tanto en Chrome como en Android, citando 'baja adopción del ecosistema, presión legal/regulatoria y limitaciones técnicas'."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Resultado a mayo 2026: Chrome sigue admitiendo cookies de terceros por defecto. El Privacy Sandbox como reemplazo unificado de la cookie ha muerto. Solo sobreviven CHIPS (cookies particionadas) y FedCM (Federated Credential Management) por su utilidad técnica."
+        },
+        {
+          "type": "p",
+          "text": "Lectura estratégica para un consultor: aunque Chrome no eliminó la cookie, Safari + Firefox + iOS ATT + Brave ya rompieron el 30–40% del addressable inventory. El plan post-cookie sigue siendo necesario — solo cambió la urgencia."
+        },
+        {
+          "type": "h2",
+          "text": "2. Safari ITP, Firefox ETP y mobile"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Safari ITP: desde la versión 13.1 bloquea todas las cookies de terceros por defecto, sin excepciones. Cookies seteadas por JavaScript caducan a 7 días (o 24 horas si el usuario llegó con parámetros como gclid o fbclid).",
+            "Firefox ETP (Total Cookie Protection): cookies de terceros se particionan por dominio top-level. Activo por defecto desde Firefox 102.",
+            "Apple ATT (iOS): los usuarios deben dar opt-in explícito para tracking. La tasa media global de opt-in está en torno al 35–50% en 2025; juegos por encima del promedio (~50–70%) y otras apps más bajo. Apps con menos del 30% pierden ~58% de ingresos publicitarios en promedio.",
+            "Google GAID (Android): sigue disponible. Tras la deprecación de Privacy Sandbox Android en octubre 2025, GAID continúa siendo el identificador efectivo."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "3. Alternative IDs: el mercado actual"
+        },
+        {
+          "type": "p",
+          "text": "Estos son los identificadores que el ecosistema usa cuando la cookie no está disponible. La recomendación industrial es 'multi-ID strategy' — correr al menos dos en paralelo."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Unified ID 2.0 (UID2) – The Trade Desk: hash determinístico SHA-256 sobre email + teléfono. Aproximadamente el 75% del third-party data ecosystem lo soporta; integrado en Snowflake, Tealium, LiveRamp.",
+            "EUID (European Unified ID): variante TCF-compliant de UID2. Adoptado por grandes marcas europeas. Alternativa principal en GDPR.",
+            "ID5: ID probabilístico-determinístico server-side, cookieless-first. ~600 publishers integrados. Fuerte cobertura en Safari/Firefox.",
+            "LiveRamp ATS / RampID: identity people-based autenticado vía login. 215+ publishers globales, 65% del Comscore Top 20 US, 25+ SSPs.",
+            "Yahoo ConnectID: identity propio basado en el grafo de Yahoo (~200M usuarios autenticados US). Tracción media, fuerte en publishers premium."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "4. Clean rooms y data collaboration"
+        },
+        {
+          "type": "p",
+          "text": "Las clean rooms son el sustituto enterprise del data-sharing post-cookie: permiten cruzar datasets sin que ninguna parte exponga raw data. Recapitulando lo visto en la clase 2 y añadiendo casos B2B:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "AWS Clean Rooms: SQL-based, multi-party, ideal dentro del ecosistema AWS.",
+            "LiveRamp Safe Haven + Habu (LiveRamp adquirió Habu en 2024): Leader en IDC MarketScape 2025. Estándar de facto para identity resolution + clean room en marketing.",
+            "InfoSum (WPP, 2025): tech de 'non-movement' — los datos nunca salen del entorno del propietario. Fuerte para entrenamiento de modelos IA sin exponer raw data.",
+            "Snowflake Data Clean Rooms: UX accesible, templates por industria. Ideal cuando ambas partes ya están en Snowflake.",
+            "Google Ads Data Hub (ADH) y Meta Advanced Analytics: clean rooms cerradas de cada walled garden, limitadas a output agregado."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Casos de uso B2B: cruzar CRM del advertiser con la base de usuarios autenticados de un publisher B2B (Bloomberg, FT, WSJ, LinkedIn) sin exponer cuentas; co-marketing entre vendors de un stack; medición de incrementalidad ABM entre la base CRM y exposición publicitaria en CTV/display."
+        },
+        {
+          "type": "h2",
+          "text": "5. GDPR, DMA y el régimen regulatorio europeo"
+        },
+        {
+          "type": "p",
+          "text": "Europa lidera la regulación publicitaria global. Tres piezas a conocer:"
+        },
+        {
+          "type": "h3",
+          "text": "5.1. Consent Management Platforms (CMPs)"
+        },
+        {
+          "type": "p",
+          "text": "Los tres líderes del mercado europeo son OneTrust, Didomi y Sourcepoint. Todos soportan el IAB Europe Transparency & Consent Framework (TCF)."
+        },
+        {
+          "type": "h3",
+          "text": "5.2. IAB Europe TCF"
+        },
+        {
+          "type": "p",
+          "text": "TCF v2.2 sigue vigente en mayo 2026. TCF v2.3 (anunciada el 19 de junio de 2025) es obligatoria desde el 28 de febrero de 2026. Caso clave: la APD belga vs IAB Europe — la Corte de Apelaciones de Bruselas en 2025 confirmó multas de €250.000 contra IAB Europe por el TC String (la cookie de consentimiento) considerándolo dato personal. La sentencia aplica a TCF 1.0/2.0, no a 2.2 ni 2.3."
+        },
+        {
+          "type": "h3",
+          "text": "5.3. Digital Markets Act (DMA) y multas históricas"
+        },
+        {
+          "type": "p",
+          "text": "El DMA entró en aplicación en mayo 2023 y desde 2024–2025 ha generado las multas más relevantes en publicidad digital:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Septiembre 2025: Google multado con €2.950 millones por prácticas antimonopolio en publicidad (adtech).",
+            "2025: Apple multada con €500M y Meta con €200M por incumplir el DMA. Meta específicamente por su modelo 'pay or consent'.",
+            "Impacto en walled gardens: obligación de acceso estandarizado a métricas de performance, reduciendo dependencia del reporting interno de gatekeepers."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Conclusión consultiva: cualquier stack diseñado pensando en compliance europea (GDPR + TCF + DMA) funciona en otros mercados; el inverso no es cierto. Si vas a recomendar arquitectura, partí del estándar EU."
+        },
+        {
+          "type": "h2",
+          "text": "6. Contextual moderno con IA: el resurgir post-cookie"
+        },
+        {
+          "type": "p",
+          "text": "El contextual ha vuelto al centro porque no requiere identidad y porque la IA/NLP moderna lo hace mucho más sofisticado que el viejo keyword matching. El mercado pasó de $211.620M en 2024 a $233.890M en 2025 (CAGR ~10,5%)."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Seedtag: IA propia 'Liz' + neuro-contextual (interpreta interés, emoción, intent). 11.000+ publishers.",
+            "GumGum: especialista en in-image / in-video con computer vision + NLP.",
+            "Peer39: data layer pre-bid — brand safety + custom categories + sentiment + weather + trend targeting.",
+            "IAS Context Control: capa de contextual + brand safety integrada en el DSP del comprador.",
+            "Captify: search-powered contextual (señales de búsqueda agregadas)."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Mensaje estratégico para el curso: el contextual moderno con LLMs/NLP entiende tema, sentimiento, emoción y momento. No compite con identity; se combina con ella en planes mixtos. En la próxima clase entramos en el campo de juego específico de B2B SaaS y verás cómo identity + contextual + intent data se ensamblan en stacks ABM concretos."
+        }
+      ],
+      "keyData": [
+        "Chrome NO eliminó cookies de terceros (abril 2025); Privacy Sandbox retirado en oct 2025",
+        "Safari + Firefox + iOS ATT ya rompieron el 30–40% del addressable inventory",
+        "Opt-in iOS ATT global: 35–50% (50–70% en juegos)",
+        "UID2 soportado por ~75% del third-party data ecosystem",
+        "LiveRamp ATS: 215+ publishers, 25+ SSPs",
+        "TCF 2.3 obligatorio desde 28 feb 2026",
+        "Google multado con €2.95B en sept 2025 por antimonopolio adtech",
+        "Mercado contextual: $211B (2024) → $233B (2025)"
+      ],
+      "recap": [
+        "Chrome no eliminó la cookie pero Safari + Firefox + iOS ATT ya derribaron 30–40% del addressable.",
+        "Multi-ID es la estrategia recomendada: UID2/EUID + ID5 o LiveRamp.",
+        "Clean rooms son la pieza enterprise para data collaboration sin exponer raw data.",
+        "El régimen europeo (GDPR + TCF + DMA) sirve como floor regulatorio global.",
+        "Contextual moderno con IA recuperó protagonismo y se combina con identity."
+      ],
+      "resources": [
+        {
+          "label": "Privacy Sandbox – Update on plans (oct 2025)",
+          "url": "https://privacysandbox.google.com/blog/update-on-plans-for-privacy-sandbox-technologies"
+        },
+        {
+          "label": "Digiday – Google Chrome cookies",
+          "url": "https://digiday.com/media/google-chrome-will-now-continue-to-use-third-party-cookies/"
+        },
+        {
+          "label": "The Current – EUID for European brands",
+          "url": "https://www.thecurrent.com/id-brands-euid-cookies-identity-advertising"
+        },
+        {
+          "label": "LiveRamp Leader IDC MarketScape Clean Rooms",
+          "url": "https://liveramp.com/blog/liveramp-leader-idc-marketscape-data-clean-room-technology"
+        },
+        {
+          "label": "Didomi – TCF IAB Europe APD ruling",
+          "url": "https://www.didomi.io/blog/tcf-iab-europe-belgian-apd-may-2025"
+        },
+        {
+          "label": "ExchangeWire – Seedtag neuro-contextual",
+          "url": "https://www.exchangewire.com/blog/2025/06/05/seedtag-unveils-neuro-contextual-advertising-entering-a-new-era-of-contextual-targeting/"
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title": "Programática B2B SaaS: ABM, intent data y el stack moderno",
+      "duration": "20 minutos",
+      "eyebrow": "B2B SaaS",
+      "objectives": [
+        "Entender por qué B2B requiere un manual distinto al de B2C.",
+        "Conocer las plataformas ABM líderes (6sense, Demandbase, RollWorks, Madison Logic) y cuándo usar cada una.",
+        "Comprender el rol del intent data (Bombora, G2, TechTarget) en el funnel B2B.",
+        "Diseñar mentalmente un stack programmatic B2B típico Series B a E."
+      ],
+      "structure": [
+        "0:00 – 2:30 · Por qué B2B es estructuralmente diferente",
+        "2:30 – 8:00 · ABM platforms: 6sense, Demandbase, RollWorks, Madison Logic",
+        "8:00 – 11:00 · Intent data: Bombora, G2, TechTarget",
+        "11:00 – 14:00 · LinkedIn como walled garden indispensable",
+        "14:00 – 17:30 · Stack típico Series B–E y cómo todo se conecta",
+        "17:30 – 20:00 · AI específico para B2B y el caso Mutiny agentic"
+      ],
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. Por qué B2B es estructuralmente diferente"
+        },
+        {
+          "type": "p",
+          "text": "Si llevás todo lo aprendido en las clases 1 a 5 al contexto B2B SaaS, hay que ajustar el modelo mental. Cuatro diferencias estructurales:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Decisiones por comité: 6–10 stakeholders promedio en compras enterprise SaaS.",
+            "Ciclos largos: entre 3 y 18 meses desde el primer touch hasta el cierre.",
+            "Account-based, no lead-based: la unidad de trabajo no es la persona, es la cuenta. Una cuenta puede tener 8 personas activas en investigación y todas deben 'calentarse' simultáneamente.",
+            "TAM pequeño y altamente identificable: una empresa B2B SaaS típica tiene 500–5.000 cuentas target. Esto invierte la lógica del programmatic de consumo (que asume audiencias enormes)."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Implicación: no se compra impresiones para una audiencia masiva; se compra impresiones para que muchas personas dentro de un set acotado de cuentas vean tu mensaje en el momento adecuado. Esto requiere targeting de cuentas (no de personas) y attribution a nivel de cuenta (no de lead)."
+        },
+        {
+          "type": "h2",
+          "text": "2. Plataformas ABM: el campo de batalla"
+        },
+        {
+          "type": "p",
+          "text": "El 70% de marketers tiene un programa ABM activo en 2025, dedican el 29% del presupuesto marketing a ABM, y 97% reporta que ABM tiene mayor ROI que otras estrategias (con incrementos de hasta +208% en revenue marketing-generated en 3 años)."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "6sense: 'Revenue AI for Marketing'. Predictive scoring + intent + ABM ads. Forrester Leader en intent Q1 2025. Pricing $60K-$300K+ anual. Sweet spot: enterprise, ciclos largos, predictive accuracy.",
+            "Demandbase One: mayor first-party intent dataset (2T+ señales/mes) + DSP propio + person-based intent. Pricing $60K-$300K+. Sweet spot: enterprise, ad scale, buying group targeting.",
+            "RollWorks (NextRoll): punto de entrada accesible. Mensual desde ~$1K. ABM completa $12K-$50K anual. Sweet spot: mid-market, <$5M ARR, test antes de comprometerse.",
+            "Madison Logic: content syndication + ABM ads, fuerte en tech. Pricing custom. Sweet spot: targeting de buyer intent + content distribution.",
+            "Terminus: fusionada con DemandScience (fin 2024). Orquestación multi-canal. ~$23K mediana, hasta $87K+. Sweet spot: coordinación multi-canal (ads + email + chat + direct mail)."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Decisión consultiva: el split más común es 'RollWorks para empezar; 6sense o Demandbase cuando hay >$5M ARR y un equipo dedicado'. La diferencia entre 6sense y Demandbase es estilo: 6sense pone el acento en predictive AI, Demandbase en escala de datos propios + DSP integrado."
+        },
+        {
+          "type": "h2",
+          "text": "3. Intent data: la materia prima del ABM"
+        },
+        {
+          "type": "p",
+          "text": "Intent data son señales de que una cuenta está investigando un tema relevante para tu producto. Los cinco Leaders del Forrester Wave Q1 2025 en B2B Intent Data son: Intentsify, 6sense, Bombora, Informa TechTarget y Demandbase."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Bombora Company Surge: red cooperativa de ~5.000 publishers B2B. Detecta 'spikes' de consumo de contenido por cuenta sobre 8.000+ tópicos. Pricing $12K-$40K/año. En 2025 lanzó Curated Ecosystem Audiences con Crunchbase, Definitive Healthcare, HG Insights y G2.",
+            "G2 Buyer Intent: señales sobre cuentas que comparan productos en G2 (la review site más grande de software).",
+            "TechTarget Priority Engine: la red B2B de mayor fidelidad para IT buyers (SearchCRM, TechRepublic, etc.)."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Cómo se integran en programmatic: las señales de intent suben el score de cuenta en 6sense/Demandbase; cuando la cuenta sube a 'decision stage' se activan audiences cookieless en LinkedIn, TTD (display, CTV) y open programmatic vía integraciones nativas; mientras la cuenta avanza, los bids suben dinámicamente y la frecuencia se intensifica."
+        },
+        {
+          "type": "h2",
+          "text": "4. LinkedIn: el walled garden indispensable"
+        },
+        {
+          "type": "p",
+          "text": "LinkedIn merece su propia sección porque en B2B es virtualmente irreemplazable."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Share of budget: la asignación promedio a LinkedIn Ads subió del 31% al 39% del presupuesto B2B durante 2024. LinkedIn es ahora el mayor canal individual de gasto B2B, superando a Google Search, Display y YouTube individualmente.",
+            "LinkedIn Audience Network: extiende el targeting de LinkedIn (cargo, empresa, industria, seniority) fuera de LinkedIn a apps y sitios premium. Es lo más cercano a 'programmatic dentro del walled garden'.",
+            "Conversions API (CAPI) + Insight Tag: tracking server-side para mantener attribution post-cookie. El 75% de los clientes de Dreamdata usa LinkedIn CAPI.",
+            "ROAS: LinkedIn reporta 113% ROAS promedio, mencionado como la única plataforma con ROI consistentemente positivo en B2B."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Por qué LinkedIn no es programmatic 'puro' pero sí estratégicamente programático: aunque opera dentro de su walled garden, ofrece API, targeting account-based, audience-based y dinámico, server-side conversion, e integra con CDPs via CAPI. Para B2B, tratar a LinkedIn como nodo programmatic central del stack es defendible."
+        },
+        {
+          "type": "h2",
+          "text": "5. Stack típico Series B–E: cómo todo se conecta"
+        },
+        {
+          "type": "p",
+          "text": "El stack que verás en empresas B2B SaaS típicas con $5M–$200M ARR:"
+        },
+        {
+          "type": "p",
+          "text": "Fuentes first-party → CDP: web tracking via Segment, product usage via Segment/Heap/Amplitude, CRM data via Salesforce o HubSpot."
+        },
+        {
+          "type": "p",
+          "text": "Capa ABM / Intent: 6sense o Demandbase como motor central, complementado con Bombora (intent abierto) y G2 (review intent)."
+        },
+        {
+          "type": "p",
+          "text": "Activación: LinkedIn Ads (con Insight Tag + CAPI) para precisión, The Trade Desk para CTV + open web display + audio, Google Ads para search + remarketing, y native ABM ads dentro de 6sense o Demandbase."
+        },
+        {
+          "type": "p",
+          "text": "Attribution: Bizible (ahora Adobe Marketo Measure) o Demandbase para enterprise; Dreamdata o HockeyStack como alternativas modernas."
+        },
+        {
+          "type": "p",
+          "text": "Closed loop: revenue feedback va a Salesforce/HubSpot, cerrando el ciclo."
+        },
+        {
+          "type": "p",
+          "text": "Datos de adopción relevantes: Salesforce está en el 50% de los stacks B2B documentados (42% market share en arquitecturas CRM-centric); HubSpot está en el 45,8% de stacks B2B (29,4% del mercado de marketing automation). Bizible se mantiene como alternativa enterprise para shops Adobe/Marketo."
+        },
+        {
+          "type": "h2",
+          "text": "6. AI específico para B2B"
+        },
+        {
+          "type": "h3",
+          "text": "6.1. Predictive scoring (lo core)"
+        },
+        {
+          "type": "p",
+          "text": "6sense AI y Demandbase Predictive son los dos motores que dominan. Modelos ML sobre intent + firmographics + technographics + engagement producen un buying stage por cuenta: Target → Aware → Consideration → Decision → Purchase. El 84% de marketers usa AI para hyper-personalización en ABM."
+        },
+        {
+          "type": "h3",
+          "text": "6.2. Generative AI para personalización 1:1: el caso Mutiny"
+        },
+        {
+          "type": "p",
+          "text": "Mutiny es un caso de pivot que conviene conocer. Históricamente era la herramienta de referencia para web personalization en B2B (cambiar landing pages según industria, cuenta, etapa). En 2025–2026 pivotó a 'agentic content generation': describes el objetivo ('business case para esta cuenta', '1:1 landing page para Acme Corp') y el agente genera la página/material completo. Es un ejemplo concreto de cómo la IA generativa está desplazando interfaces de configuración por interfaces conversacionales en B2B."
+        },
+        {
+          "type": "p",
+          "text": "RightMessage ocupa parte del nicho que Mutiny abandona: personalización web ligera, quiz funnels, ESP sync."
+        },
+        {
+          "type": "h3",
+          "text": "6.3. AI SDR (mención, off-topic)"
+        },
+        {
+          "type": "p",
+          "text": "Herramientas como Clay, Apollo AI SDR, 11x, Regie.ai son fuera del scope programmatic puro, pero conviene tenerlas en el radar como contexto de 'AI en el funnel completo' B2B."
+        },
+        {
+          "type": "p",
+          "text": "Resumen final: en B2B el protagonista no es el DSP genérico, es el par ABM platform + LinkedIn, alimentado por intent data + CDP, cerrado con attribution multi-touch a nivel de cuenta. En la próxima clase nos metemos en los formatos emergentes (CTV, retail media, DOOH, audio) y cómo aplican o no a B2B SaaS."
+        }
+      ],
+      "keyData": [
+        "70% de marketers tienen ABM activo en 2025; 29% del budget marketing va a ABM",
+        "97% reporta mayor ROI vs otras estrategias; hasta +208% revenue marketing-generated en 3 años",
+        "6sense / Demandbase: $60K–$300K+ anual",
+        "RollWorks entry: ~$12K-$50K anual",
+        "LinkedIn share of B2B budget: 31% → 39% en 2024",
+        "LinkedIn ROAS promedio: 113%",
+        "Salesforce en 50% de stacks B2B; HubSpot en 45,8%",
+        "84% de marketers usan AI para hyper-personalización en ABM"
+      ],
+      "recap": [
+        "B2B = decisiones por comité, ciclos largos, account-based, TAM pequeño y conocido.",
+        "ABM platforms son el cerebro: 6sense/Demandbase para enterprise, RollWorks para mid-market.",
+        "Intent data (Bombora, G2, TechTarget) alimenta el scoring de cuentas.",
+        "LinkedIn captura ~39% del budget B2B; es walled garden pero opera como nodo programmatic central.",
+        "Stack típico: CDP + ABM + LinkedIn + TTD + Attribution + CRM."
+      ],
+      "resources": [
+        {
+          "label": "Improvado – B2B Programmatic Strategies",
+          "url": "https://improvado.io/blog/b2b-programmatic-advertising-strategies"
+        },
+        {
+          "label": "Directive – 6sense vs Demandbase vs RollWorks",
+          "url": "https://directiveconsulting.com/blog/b2b-ab2-tools-compared-6sense-vs-demandbase-vs-rollworks-and-when-to-use-each/"
+        },
+        {
+          "label": "Salesmotion – Intent data providers",
+          "url": "https://salesmotion.io/blog/intent-data-providers"
+        },
+        {
+          "label": "The Linked Blog – LinkedIn Ads benchmarks 2025",
+          "url": "https://thelinkedblog.com/2025/linkedin-ads-benchmarks-report-2025-key-insights-for-b2b-marketers-3213/"
+        },
+        {
+          "label": "Mutiny – Agentic AI for GTM",
+          "url": "https://www.mutinyhq.com/"
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title": "Formatos emergentes: CTV, retail media, DOOH, audio e in-game",
+      "duration": "20 minutos",
+      "eyebrow": "Formatos",
+      "objectives": [
+        "Conocer en detalle los cinco canales emergentes y su tamaño 2025–2026.",
+        "Identificar los DSPs y players clave de cada canal.",
+        "Entender la aplicabilidad real de cada formato para B2B SaaS.",
+        "Saber qué rol juega la IA en cada uno."
+      ],
+      "structure": [
+        "0:00 – 6:00 · Connected TV (CTV): líder del crecimiento",
+        "6:00 – 11:00 · Retail Media: el canal de mayor crecimiento absoluto",
+        "11:00 – 14:00 · DOOH programático",
+        "14:00 – 17:00 · Audio programático",
+        "17:00 – 20:00 · In-game, native, rich media + cierre B2B"
+      ],
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. Connected TV (CTV)"
+        },
+        {
+          "type": "p",
+          "text": "CTV es publicidad servida a televisores conectados (smart TV, dongle como Roku/Fire TV, consolas). Es el canal premium que más crece y donde la mayor parte del inventario ya es biddable. Cifras 2025–2026:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "EE.UU. 2025: $33.350M (+14,5% YoY proyectado para 2026 = $37.950M); 2029 proyectado: $52.530M.",
+            "Reino Unido 2026: $3.250M (+16,9% YoY).",
+            "Alemania: consumo CTV creció 21% YoY; España: inventario CTV +45% en 2 años.",
+            "84–90% del inventario CTV ya es programático."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Players de inventario premium: Netflix Ads (lanzó su ad tech propio en 2024–2025 en UCAN, EMEA y LATAM), Disney+/Hulu Ads, Amazon Prime Video Ads, Max (Warner Bros Discovery), Paramount+. En FAST (Free Ad-Supported Streaming TV): Roku Channel (97,3M viewers US), Tubi (92,5M), Samsung TV Plus (100M+ MAUs globales en enero 2026), LG Channels, Pluto TV, Vizio (parte de Walmart Connect)."
+        },
+        {
+          "type": "p",
+          "text": "Players de compra: The Trade Desk líder open web CTV; DV360 (~47% del DSP global), Amazon DSP (~20%), TTD (~19%) en share global. Movimiento clave 2025: alianza Amazon DSP – Netflix (Q4 2025) para acceso programático al inventario de Netflix en US, UK, FR, ES, MX, CA, JP, BR, IT, DE y AU."
+        },
+        {
+          "type": "p",
+          "text": "Frequency cap cross-device y addressable TV: los DSPs líderes ya ofrecen frequency cap unificada cross-device vía identity graphs (UID2 de TTD, household graphs de Amazon). Addressable TV permite targeting hogar-a-hogar combinando datos del operador, ACR de las smart TVs y first-party data del anunciante."
+        },
+        {
+          "type": "p",
+          "text": "Aplicabilidad B2B SaaS: CTV es viable y crece para B2B. El 73% de marcas B2B integró CTV en sus estrategias performance. Mecanismos clave: IP targeting empresarial (Account-Based Television), integraciones con Demandbase/Bombora/6sense, geofencing de sedes corporativas. Caso documentado: una SaaS B2B targeteando IT decision-makers obtuvo +35% de pipeline cualificado combinando CTV + ABM + retargeting CRM."
+        },
+        {
+          "type": "p",
+          "text": "Impacto IA: bidding inteligente con decenas de señales en <100ms; frequency management predictivo cross-device; DCO creativo con tasas de finalización de vídeo del 94,5% vs 70% de creatividades estándar."
+        },
+        {
+          "type": "h2",
+          "text": "2. Retail Media Networks (RMN)"
+        },
+        {
+          "type": "p",
+          "text": "Es el canal de mayor crecimiento absoluto y el que más cambia el balance de poder. Cifras:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "EE.UU. 2026: $69.330M (vs $58.790M en 2025, +17,9% YoY).",
+            "Global 2025: $177.100M (supera a TV global por primera vez).",
+            "Europa: €31.000M proyectado en 2028; >100 RMNs activos en el continente.",
+            "Concentración brutal: Amazon Ads 79,7% market share US retail media en 2025; Walmart Connect 8,0%."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Players principales: Amazon Ads (líder), Walmart Connect (facturó $4.400M FY25 +27% YoY, +31% Q1 FY26 tras adquirir Vizio), Target Roundel, Kroger Precision Marketing, Carrefour Links (alianza con Publicis vía Unlimitail desde julio 2025), Tesco Media & Insight (#3 global, anunciantes Nestlé y Reckitt), Ahold Delhaize, Sainsbury's, Zalando, Cdiscount."
+        },
+        {
+          "type": "p",
+          "text": "On-site vs off-site: on-site son sponsored products, banners y display dentro del e-commerce del retailer (search ads en Amazon, Walmart.com). Off-site extiende los segmentos de audiencia first-party del retailer a inventario externo (CTV, social, open web). En 2026 los anunciantes gastarán $6.100M en CTV powered by retail media y $7.760M en social retail-powered."
+        },
+        {
+          "type": "p",
+          "text": "Tech enablers: Criteo Commerce Media y CitrusAd (adquirida por Publicis/Epsilon) son los grandes facilitadores SaaS para retailers sin ad tech propio. Kevel es alternativa headless para retailers que quieren construir su propio stack."
+        },
+        {
+          "type": "p",
+          "text": "Aplicabilidad B2B SaaS: limitada pero existe vía Amazon Business (marketplace B2B de Amazon) — targeting por industria, tamaño de empresa y categoría de compra B2B. Útil para SaaS con apps marketplace (Slack, Zoom, Notion en Amazon Business). Para SaaS puro horizontal, retail media sigue siendo un canal marginal."
+        },
+        {
+          "type": "h2",
+          "text": "3. DOOH programático"
+        },
+        {
+          "type": "p",
+          "text": "DOOH (Digital Out-of-Home) programmatic permite comprar pantallas exteriores (vallas, transporte, retail, gyms, aeropuertos) mediante DSPs. El mercado de plataformas pDOOH crecerá de $5.840M (2025) a $6.830M (2026) +17% YoY, proyectado a $12.880M en 2030 (CAGR 17,2%). El mercado DOOH amplio (incluyendo gasto publicitario) alcanzó $22.000M en 2025."
+        },
+        {
+          "type": "p",
+          "text": "DSPs líderes: Vistar Media (líder histórico, integrado con TTD, DV360, Amazon DSP); Hivestack (adquirida por Perion en diciembre 2023 por $100M, full-stack global); Place Exchange (SSP independiente); Broadsign Reach (parte del CMS Broadsign, líder en gestión de inventario DOOH)."
+        },
+        {
+          "type": "p",
+          "text": "Casos de uso: geotargeting hyperlocal (vallas alrededor de aeropuertos, sedes, eventos); contextual triggers (clima, tráfico, hora, índices de polen, eventos en directo); omnichannel sequencing (DOOH → CTV → mobile retargeting con +3,5x CTR en mobile post-DOOH); B2B ABM físico (DOOH dirigido a sedes corporativas de cuentas target)."
+        },
+        {
+          "type": "p",
+          "text": "Impacto IA: dynamic creative optimization en tiempo real adaptando mensaje a condiciones ambientales y audiencia agregada que pasa por la pantalla (mobility data anonimizada). El 29% de los consumidores visita una tienda física tras ver un DOOH y el 22% realiza una compra online."
+        },
+        {
+          "type": "h2",
+          "text": "4. Audio programático"
+        },
+        {
+          "type": "p",
+          "text": "Audio programático crece sostenidamente. Cifras:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "EE.UU. 2025: $2.260M (+18% YoY); ~30% del gasto total en audio digital.",
+            "76% de los estadounidenses de 12+ años escucha audio digital cada mes.",
+            "Podcast advertising global 2025: $3.560M."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Players: Spotify Ad Studio + Spotify Ad Exchange (lanzado en primavera 2025, primer marketplace abierto con bidding real vía TTD y DV360 — música, video y próximamente podcasts); SXM Media (SiriusXM, Pandora, Stitcher) que opera con AdsWizz como ad server/SSP; Audacy; iHeartMedia; Triton Digital; Magnite Streaming y AdsWizz para podcast advertising programático con dynamic ad insertion."
+        },
+        {
+          "type": "p",
+          "text": "Aplicabilidad B2B SaaS: Spotify Ad Studio permite targeting B2B viable por roles profesionales (vía Spotify Audience Network), industrias y contextual podcast targeting (categorías Business, Technology, SaaS). Útil para brand awareness en audiencias decision-maker durante commutes y home office."
+        },
+        {
+          "type": "p",
+          "text": "Impacto IA: voice-cloning ads dinámicas (host-read ads sintéticas con voz del podcaster autorizada), optimización de hora/mood/contexto, brand suitability pre-bid a nivel de transcripción de episodio."
+        },
+        {
+          "type": "h2",
+          "text": "5. In-game, native, rich media + cierre B2B"
+        },
+        {
+          "type": "h3",
+          "text": "5.1. Native programmatic"
+        },
+        {
+          "type": "p",
+          "text": "Taboola y Outbrain dominan native open web (Taboola tiene partnership exclusivo con Yahoo desde 2023). Ofrecen feeds de contenido recomendado en publishers premium (CNN, MSN, Le Monde) con CPCs bajos y alto scroll-depth. Aplicabilidad B2B SaaS alta para top-funnel content marketing (whitepapers, case studies)."
+        },
+        {
+          "type": "h3",
+          "text": "5.2. Rich media"
+        },
+        {
+          "type": "p",
+          "text": "Celtra (parte de S4 Capital) y Flashtalking by Mediaocean lideran producción y servicio de creatividades dinámicas, DCO y workflows omnicanal. Una plantilla creativa adaptada por audiencia, contexto, dispositivo y momento — esencial para escalar campañas B2B SaaS multi-vertical sin multiplicar producción."
+        },
+        {
+          "type": "h3",
+          "text": "5.3. In-game advertising programmatic"
+        },
+        {
+          "type": "p",
+          "text": "Mercado in-game amplio: $124.000M en 2025 (incluyendo todos los modelos publicitarios). Como segmento puro de in-game advertising (intrinsic ads, sin rewarded video): $9.067M en 2024 con CAGR 10,6%. Players: Anzu (intrinsic in-game ads — vallas, banners dentro del juego sin interrumpir gameplay; partnership con Stagwell en Cannes Lions 2024); Frameplay (lanzó Frameplay Exchange en 2024 integrando Adverty y AdInMo); Bidstack (programmatic in-game, especialmente en juegos deportivos)."
+        },
+        {
+          "type": "h3",
+          "text": "5.4. Cierre B2B: qué priorizar"
+        },
+        {
+          "type": "p",
+          "text": "Aplicabilidad B2B SaaS por canal:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "CTV: alta. ABM via IP empresarial + ACR + frequency cross-device.",
+            "Native programmatic: alta. Top-funnel y content distribution.",
+            "Audio: media. Brand awareness con role targeting en Spotify.",
+            "DOOH: media. ABM físico a sedes corporativas y geo-targeting.",
+            "Retail media: baja, salvo Amazon Business para marketplaces SaaS.",
+            "In-game: baja, salvo gaming-specific SaaS."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "En la próxima y última clase armamos el stack recomendado, las tendencias 2026+, los KPIs que importan, y los recursos para seguir aprendiendo cuando el curso termine."
+        }
+      ],
+      "keyData": [
+        "CTV US 2025: $33,4B → $37,95B 2026 (+14,5%); 2029: $52,5B",
+        "Retail Media global 2025: $177,1B (supera TV global por primera vez)",
+        "Amazon Ads: 79,7% US retail media share; Walmart Connect 8,0%",
+        "pDOOH 2025: $5,84B → $6,83B 2026 (+17%)",
+        "Audio digital programmatic US 2025: $2,26B (+18%)",
+        "Podcast advertising global 2025: $3,56B",
+        "In-game amplio 2025: $124B; in-game puro 2024: $9,07B"
+      ],
+      "recap": [
+        "CTV es el canal premium de mayor crecimiento; Amazon-Netflix alliance Q4 2025 lo reforzó.",
+        "Retail Media es el de mayor crecimiento absoluto y ya supera a TV global.",
+        "DOOH y audio son nichos relevantes con buen fit para ABM físico y brand awareness B2B.",
+        "B2B SaaS prioriza CTV + native + audio; retail media solo Amazon Business; in-game generalmente fuera de scope."
+      ],
+      "resources": [
+        {
+          "label": "MNTN Research – CTV Ad Spend Growth",
+          "url": "https://research.mountain.com/trends/ctv-ad-spend-will-grow-to-46-89-billion-by-2028/"
+        },
+        {
+          "label": "Variety – Netflix/Amazon DSP Partnership",
+          "url": "https://variety.com/2025/tv/news/netflix-amazon-deal-connected-tv-impressions-advertising-1236513108/"
+        },
+        {
+          "label": "Demandbase – CTV B2B Strategic Playbook 2026",
+          "url": "https://www.demandbase.com/blog/ctv-b2b-advertising/"
+        },
+        {
+          "label": "eMarketer – Retail Media Ad Spending H2 2025",
+          "url": "https://www.emarketer.com/content/retail-media-ad-spending-forecast-trends-h2-2025"
+        },
+        {
+          "label": "Marketing Brew – Spotify Ad Exchange 2025",
+          "url": "https://www.marketingbrew.com/stories/2025/06/24/spotify-programmatic-audio"
+        },
+        {
+          "label": "Market.us – Programmatic DOOH Market",
+          "url": "https://market.us/report/programmatic-dooh-platform-market/"
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title": "Futuro, inversión y stack recomendado para B2B SaaS",
+      "duration": "20 minutos",
+      "eyebrow": "Cierre",
+      "objectives": [
+        "Sintetizar las tendencias estructurales que marcarán 2026–2028.",
+        "Diseñar el stack programmatic recomendado para B2B SaaS según etapa.",
+        "Definir KPIs y métricas que realmente importan en una operación moderna.",
+        "Salir con un plan de aprendizaje y fuentes para seguir profundizando."
+      ],
+      "structure": [
+        "0:00 – 4:00 · Tendencias estructurales 2026–2028",
+        "4:00 – 9:00 · Stack programático recomendado por etapa (Series A → Series E+)",
+        "9:00 – 13:00 · KPIs y métricas que realmente importan",
+        "13:00 – 16:00 · Decisiones consultivas clave (un checklist accionable)",
+        "16:00 – 18:00 · Riesgos y banderas rojas a vigilar",
+        "18:00 – 20:00 · Cómo seguir aprendiendo: fuentes recomendadas"
+      ],
+      "content": [
+        {
+          "type": "h2",
+          "text": "1. Tendencias estructurales 2026–2028"
+        },
+        {
+          "type": "p",
+          "text": "Cinco tendencias que conviene anticipar al cerrar el curso:"
+        },
+        {
+          "type": "h3",
+          "text": "1.1. Agentic AI: del modelo al agente"
+        },
+        {
+          "type": "p",
+          "text": "La industria está pasando de 'modelos ML embebidos en plataformas' a 'agentes IA que ejecutan tareas autónomas'. Amazon Ads Agent (noviembre 2025), Mutiny's agentic pivot, los AI Agents for Brand Safety de Scope3 son los primeros ejemplos. Para 2027, esperá que decisiones de bidding, creatividad y optimización de portfolio se ejecuten por agentes con menos intervención humana."
+        },
+        {
+          "type": "h3",
+          "text": "1.2. La cookie no murió pero la infraestructura post-cookie se consolidó igual"
+        },
+        {
+          "type": "p",
+          "text": "Aunque Chrome no eliminó la cookie, la inversión que la industria hizo en alternative IDs, clean rooms, contextual con IA y first-party arquitecturas ya no se va a desandar. Las próximas regulaciones europeas (e-Privacy, DSA, DMA) seguirán empujando hacia ese modelo."
+        },
+        {
+          "type": "h3",
+          "text": "1.3. Retail media absorberá más del 20% del gasto digital global para 2028"
+        },
+        {
+          "type": "p",
+          "text": "Amazon + Walmart capturan ~89% del growth incremental retail media. Aunque B2B SaaS no se beneficia directamente, sí enfrenta el efecto: los presupuestos B2C migran a retail media, encareciendo el inventory residual donde B2B compite por atención."
+        },
+        {
+          "type": "h3",
+          "text": "1.4. CTV se convierte en el formato premium dominante"
+        },
+        {
+          "type": "p",
+          "text": "MNTN Research proyecta que CTV superará el 40% del gasto publicitario global en 2030. Para B2B esto significa que la cuestión ya no es 'si entramos en CTV' sino 'cómo escalamos CTV ABM-driven'."
+        },
+        {
+          "type": "h3",
+          "text": "1.5. Concentración de holding companies y de DSPs"
+        },
+        {
+          "type": "p",
+          "text": "Tras Omnicom + IPG, esperá más M&A. La consolidación reduce competencia en el lado comprador y plantea preguntas regulatorias en Europa (DMA aplica a gatekeepers, pero la lógica antitrust se extiende)."
+        },
+        {
+          "type": "h2",
+          "text": "2. Stack programático recomendado por etapa B2B SaaS"
+        },
+        {
+          "type": "h3",
+          "text": "2.1. Pre-seed / Seed (<$1M ARR)"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Performance básico: Google Ads (Search + Performance Max) + LinkedIn Ads (Lead Gen Forms).",
+            "Tracking: Google Analytics 4 + LinkedIn Insight Tag + Meta Pixel; CRM: HubSpot Free/Starter.",
+            "Sin DSP independiente, sin ABM platform. El foco es generar pipeline barato y validar mensaje."
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "2.2. Series A ($1M–$5M ARR)"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Mantén Google Ads y LinkedIn Ads.",
+            "Sumá RollWorks como entry-level ABM ($12K–$50K/año).",
+            "CDP ligero: Segment Pro o HubSpot Operations Hub.",
+            "Server-side tracking: LinkedIn CAPI + Meta CAPI + Google Enhanced Conversions.",
+            "Sin TTD/DV360 todavía: el spend no justifica la complejidad."
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "2.3. Series B ($5M–$20M ARR)"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Considerar upgrade a 6sense Growth o Demandbase Foundations ($60K-$120K).",
+            "Sumar Bombora para intent abierto y G2 Buyer Intent si tu categoría está en G2.",
+            "CDP: Segment Business o RudderStack.",
+            "DSP independiente opcional: TTD para CTV ABM-driven o native B2B.",
+            "Attribution: HockeyStack o Dreamdata (más modernos y B2B-native que Bizible)."
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "2.4. Series C/D ($20M–$100M ARR)"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "6sense Enterprise o Demandbase One ($120K-$300K).",
+            "DSP independiente: TTD activo para CTV, audio, native open web; DV360 si tenés mucho YouTube.",
+            "CDP: Segment Enterprise o Adobe RT-CDP / Salesforce Data Cloud.",
+            "Clean room: AWS Clean Rooms si tu data vive ahí; Snowflake Data Clean Rooms si es Snowflake.",
+            "MMM: empezar con Robyn o Recast.",
+            "Attribution multi-canal: Demandbase Attribution o Adobe Marketo Measure (ex Bizible)."
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "2.5. Series E+ ($100M+ ARR / pre-IPO o público)"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Stack completo enterprise: 6sense + Demandbase + LinkedIn + TTD + DV360.",
+            "CDP enterprise: Salesforce Data Cloud o Adobe RT-CDP.",
+            "Clean rooms múltiples: AWS + Snowflake + Google ADH para mediciones cross.",
+            "MMM avanzado: Recast always-on + geo experiments programáticos.",
+            "Equipo dedicado: 1+ FTE programmatic ops, 1+ FTE marketing ops, 1+ FTE marketing analytics."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "3. KPIs y métricas que realmente importan"
+        },
+        {
+          "type": "p",
+          "text": "El error más común en B2B SaaS es medir programmatic con KPIs de B2C (CTR, CPM, CPC). En B2B lo que importa es:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Engaged accounts: cuántas cuentas target tuvieron actividad significativa (3+ touchpoints, visita >60s).",
+            "Pipeline influence: cuántas oportunidades cerradas o en curso tuvieron exposición programmatic.",
+            "Cost per opportunity (CPO) y cost per qualified opportunity (CPQO).",
+            "Velocity uplift: las cuentas expuestas a programmatic ¿cierran más rápido?",
+            "Incremental lift: medido vía geo experiments — qué porcentaje del pipeline atribuible a programmatic es causal.",
+            "Win rate uplift: % de win rate de cuentas expuestas vs control."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Métricas operativas a vigilar pero no obsesionarse: CTR (poco predictivo en B2B), CPM (relevante para comparar inventario, no para juzgar performance), viewability (mínimo 70% como referencia, pero por encima de eso no aporta mucho)."
+        },
+        {
+          "type": "h2",
+          "text": "4. Decisiones consultivas clave: checklist"
+        },
+        {
+          "type": "ol",
+          "items": [
+            "¿Qué porcentaje a walled gardens vs open web este año? (Default B2B: 60–70% walled gardens, 30–40% open).",
+            "¿Qué ABM platform y por qué? (Justificá con ciclo de venta, ACV, TAM, presupuesto).",
+            "¿Qué intent data complementa al motor ABM? (Bombora abierto + G2 si tu categoría está + TechTarget si target IT).",
+            "¿LinkedIn Ads + DSP independiente o solo LinkedIn? (Default: si tu pipeline es <$10M, solo LinkedIn).",
+            "¿CDP propio o managed? (Default: Segment para mid-market, Adobe/Salesforce para enterprise).",
+            "¿Attribution last-touch, MTA o MMM? (Default Series B+: MTA reportar + MMM decidir + geo experiments validar).",
+            "¿Quién opera el stack? (Default <Series D: agencia o freelance; Series D+: equipo interno + agencia partner).",
+            "¿Compliance check periódico? (Trimestral si operás en EU, semestral si solo US)."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "5. Riesgos y banderas rojas a vigilar"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Vendor con 'AI' que no responde las 5 preguntas (clase 3): probablemente es 'IA de marketing'.",
+            "MFA sites consumiendo >5% de tu spend programmatic: revisar exclusion lists.",
+            "Cliente con DMP todavía operando en 2026: hay deuda técnica que pagar.",
+            "Attribution last-click sigue siendo default: empujar mínimo a DDA o MTA básico.",
+            "Concentración >70% en un solo walled garden: riesgo de dependencia y bloqueo regulatorio.",
+            "Sin estrategia identity post-cookie definida: 30–40% de inventario inaccesible silenciosamente.",
+            "Equipo sin habilidades analytics in-house: hace falta al menos 1 marketing ops + 1 marketing analytics."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "6. Cómo seguir aprendiendo: fuentes recomendadas"
+        },
+        {
+          "type": "p",
+          "text": "Para mantenerte al día después del curso:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "AdExchanger (adexchanger.com): la referencia diaria de programmatic industry.",
+            "Digiday (digiday.com): análisis de media buying con perspectiva agencia/marca.",
+            "PPC Land (ppc.land): noticias rápidas de Google/Meta/Amazon Ads con foco táctico.",
+            "Marketing Brew (marketingbrew.com): newsletter diario, fácil de digerir.",
+            "IAB Europe (iabeurope.eu): para regulación y standards europeos.",
+            "eMarketer / Insider Intelligence: cifras y forecasts (requiere subscripción).",
+            "B2B Marketing Garage podcast (Demandbase): casos B2B SaaS.",
+            "The B2B Programmatic newsletter (varios autores): boutique pero relevante.",
+            "Skill: leer trimestralmente los earnings calls de TTD, Magnite, PubMatic, Criteo y Demandbase para entender hacia dónde va el mercado desde el lado vendor."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Cierre del curso: programmatic en 2026 no es 'comprar banners en open web'. Es la infraestructura por defecto del marketing digital, con la IA como capa transversal, identity post-cookie como restricción persistente, y un mapa de players que se consolida cada trimestre. Como perfil estratégico-consultivo en B2B SaaS, tu valor está en orquestar el stack correcto para cada etapa, evaluar críticamente las promesas de 'IA' de cada vendor, y mantener la coherencia entre objetivos de revenue y arquitectura técnica. La industria seguirá moviéndose rápido, pero los principios que viste en este curso son los que te van a permitir leer cualquier nuevo anuncio, fusión o feature contra un marco mental consistente."
+        }
+      ],
+      "keyData": [
+        "Tendencias: agentic AI / consolidación post-cookie / retail media / CTV 40%+ 2030 / M&A holdings",
+        "Stack Series B: RollWorks o 6sense Growth + Segment + LinkedIn + intent (~$30K-$70K/año)",
+        "Stack Series E+: 6sense + Demandbase + DSP independiente + clean rooms + MMM (multi-FTE)",
+        "KPIs B2B: engaged accounts, pipeline influence, CPO, velocity, incremental lift, win rate uplift",
+        "Default split: 60–70% walled gardens / 30–40% open web en B2B SaaS"
+      ],
+      "recap": [
+        "Adapta el stack a la etapa del negocio: no compres complejidad antes de tiempo.",
+        "Mide lo que realmente importa: pipeline, no CTR.",
+        "Evalúa vendors IA con las 5 preguntas; no caigas en marketing.",
+        "Compliance EU es el floor regulatorio que vale para todo el mundo.",
+        "Sigue 3–4 fuentes industriales para mantenerte actualizado."
+      ],
+      "resources": [
+        {
+          "label": "AdExchanger",
+          "url": "https://www.adexchanger.com/"
+        },
+        {
+          "label": "Digiday",
+          "url": "https://digiday.com/"
+        },
+        {
+          "label": "PPC Land",
+          "url": "https://ppc.land/"
+        },
+        {
+          "label": "Marketing Brew",
+          "url": "https://www.marketingbrew.com/"
+        },
+        {
+          "label": "IAB Europe",
+          "url": "https://iabeurope.eu/"
+        },
+        {
+          "label": "Demandbase Blog (B2B-focus)",
+          "url": "https://www.demandbase.com/blog/"
+        },
+        {
+          "label": "eMarketer / Insider Intelligence",
+          "url": "https://www.emarketer.com/"
+        }
+      ]
+    }
+  ],
+  "glossary": [
+    {
+      "term": "ABM",
+      "definition": "Account-Based Marketing. Estrategia B2B donde la unidad de targeting es la cuenta corporativa, no la persona."
+    },
+    {
+      "term": "Ad exchange",
+      "definition": "Marketplace digital donde se subastan impresiones en tiempo real entre SSPs y DSPs."
+    },
+    {
+      "term": "ATT",
+      "definition": "App Tracking Transparency. Marco de Apple (iOS) que requiere opt-in explícito del usuario para tracking cross-app."
+    },
+    {
+      "term": "Bid shading",
+      "definition": "Técnica de ML que ajusta la puja en subastas de primer precio para minimizar overspend."
+    },
+    {
+      "term": "CDP",
+      "definition": "Customer Data Platform. Plataforma que unifica datos first-party y los activa downstream."
+    },
+    {
+      "term": "Clean room",
+      "definition": "Entorno seguro donde dos o más partes cruzan datasets sin exponer raw data."
+    },
+    {
+      "term": "CTV",
+      "definition": "Connected TV. Anuncios servidos a televisores conectados a internet."
+    },
+    {
+      "term": "DCO",
+      "definition": "Dynamic Creative Optimization. Generación y rotación dinámica de variantes creativas."
+    },
+    {
+      "term": "DMA",
+      "definition": "Digital Markets Act. Regulación EU que constriñe a los gatekeepers digitales."
+    },
+    {
+      "term": "DMP",
+      "definition": "Data Management Platform. Categoría heredada para gestionar audiencias basadas en cookies; en declive."
+    },
+    {
+      "term": "DOOH",
+      "definition": "Digital Out-of-Home. Pantallas exteriores digitales (vallas, transporte, retail)."
+    },
+    {
+      "term": "DSP",
+      "definition": "Demand-Side Platform. Plataforma desde la que un anunciante compra impresiones programáticamente."
+    },
+    {
+      "term": "EUID",
+      "definition": "European Unified ID. Variante TCF-compliant de UID2 para mercados GDPR."
+    },
+    {
+      "term": "FAST",
+      "definition": "Free Ad-Supported Streaming TV. Canales lineales gratuitos en CTV monetizados con publicidad."
+    },
+    {
+      "term": "GDPR",
+      "definition": "General Data Protection Regulation. Regulación EU de protección de datos personales (2018)."
+    },
+    {
+      "term": "Header bidding",
+      "definition": "Técnica donde el publisher invita a varios SSPs a pujar simultáneamente antes de servir el ad."
+    },
+    {
+      "term": "Holding company",
+      "definition": "Grupo de agencias publicitarias (Omnicom, WPP, Publicis, Dentsu, Havas)."
+    },
+    {
+      "term": "IDFA",
+      "definition": "Identifier for Advertisers (Apple). Identificador móvil sujeto a ATT desde iOS 14.5."
+    },
+    {
+      "term": "Intent data",
+      "definition": "Señales que indican que una cuenta está investigando un tema relevante para tu producto."
+    },
+    {
+      "term": "MFA",
+      "definition": "Made-for-Advertising. Sitios optimizados para monetización publicitaria sin audiencia genuina."
+    },
+    {
+      "term": "MMM",
+      "definition": "Media Mix Modeling. Modelado estadístico de contribución por canal a partir de series temporales."
+    },
+    {
+      "term": "MTA",
+      "definition": "Multi-Touch Attribution. Reparto de crédito de conversión entre touchpoints mediante ML."
+    },
+    {
+      "term": "PMP",
+      "definition": "Private Marketplace. Subasta programática privada entre un publisher y compradores invitados."
+    },
+    {
+      "term": "Privacy Sandbox",
+      "definition": "Iniciativa de Google (retirada en oct 2025) para reemplazar la cookie de tercero en Chrome."
+    },
+    {
+      "term": "RTB",
+      "definition": "Real-Time Bidding. Mecanismo de subasta de impresiones individuales en tiempo real."
+    },
+    {
+      "term": "SSP",
+      "definition": "Supply-Side Platform. Plataforma desde la que un publisher gestiona y monetiza su inventario."
+    },
+    {
+      "term": "TCF",
+      "definition": "Transparency & Consent Framework. Estándar de IAB Europe para gestionar consentimiento bajo GDPR."
+    },
+    {
+      "term": "UID2",
+      "definition": "Unified ID 2.0. Identificador alternativo a la cookie basado en hash de email/teléfono, liderado por TTD."
+    },
+    {
+      "term": "Walled garden",
+      "definition": "Ecosistema cerrado donde una sola empresa controla inventario, datos y medición (Google, Meta, Amazon)."
+    }
+  ],
+  "bibliography": [
+    {
+      "title": "IAB Europe AdEx Benchmark 2024 Report",
+      "url": "https://iabeurope.eu/knowledge_hub/iab-europe-adex-benchmark-2024-report/"
+    },
+    {
+      "title": "eMarketer – Worldwide Programmatic Ad Spending 2025",
+      "url": "https://www.emarketer.com/content/worldwide-programmatic-ad-spending-2025"
+    },
+    {
+      "title": "eMarketer – Retail Media Ad Spending Forecast H2 2025",
+      "url": "https://www.emarketer.com/content/retail-media-ad-spending-forecast-trends-h2-2025"
+    },
+    {
+      "title": "eMarketer – US TV and CTV Ad Spending Q4 2025",
+      "url": "https://www.emarketer.com/content/us-tv-ctv-ad-spending-benchmarks-q4-2025"
+    },
+    {
+      "title": "Marketing Brew – WPP Media: total global ad revenue grew nearly 9% in 2025",
+      "url": "https://www.marketingbrew.com/stories/2025/12/09/total-global-ad-revenue-grew-nearly-9-in-2025-wpp-media"
+    },
+    {
+      "title": "Digiday – Acxiom data dilemma behind Omnicom + IPG",
+      "url": "https://digiday.com/media-buying/the-acxiom-data-dilemma-behind-omnicoms-market-making-ipg-acquisition/"
+    },
+    {
+      "title": "AdExchanger – Forrester SSP Wave",
+      "url": "https://www.adexchanger.com/programmatic/forresters-ssp-wave-lists-the-top-10-ssps-with-google-at-the-bottom-really/"
+    },
+    {
+      "title": "AdExchanger – LiveRamp acquires Habu",
+      "url": "https://www.adexchanger.com/platforms/liveramp-acquires-habu-as-walled-gardens-put-the-squeeze-on-indie-data-collaboration-tech/"
+    },
+    {
+      "title": "AdExchanger – End of the clean room era",
+      "url": "https://www.adexchanger.com/measurement/why-2025-marked-the-end-of-the-data-clean-room-era/"
+    },
+    {
+      "title": "CXToday – Gartner Magic Quadrant CDP 2026",
+      "url": "https://www.cxtoday.com/customer-analytics-intelligence/gartner-magic-quadrant-cdp-2026/"
+    },
+    {
+      "title": "The Trade Desk – Kokai AI ROAS report",
+      "url": "https://www.thetradedesk.com/resources/how-kokai-ai-drives-roas-advertisers"
+    },
+    {
+      "title": "PPC Land – DV360 60% cost reduction with AI Enhanced Automation",
+      "url": "https://ppc.land/dv360-reports-60-cost-reduction-with-ai-enhanced-automation/"
+    },
+    {
+      "title": "Amazon Ads – DSP Performance+",
+      "url": "https://advertising.amazon.com/library/guides/dsp-performance-plus"
+    },
+    {
+      "title": "PPC Land – Amazon launches AI agent for automated campaign management",
+      "url": "https://ppc.land/amazon-launches-ai-agent-for-automated-campaign-management/"
+    },
+    {
+      "title": "Eliya – Meridian vs Robyn 2025",
+      "url": "https://www.eliya.io/blog/media-mix-modeling/Meridian-vs-Robyn"
+    },
+    {
+      "title": "Lifesight – Best Incrementality Tools 2025",
+      "url": "https://lifesight.io/blog/best-incrementality-testing-tools/"
+    },
+    {
+      "title": "Smartly – What is DCO with AI",
+      "url": "https://www.smartly.io/resources/what-is-dynamic-creative-optimisation-dco-how-uk-advertisers-scale-personalisation-with-ai"
+    },
+    {
+      "title": "Persado – Generate Predict",
+      "url": "https://www.persado.com/product/capabilities/generate-predict/"
+    },
+    {
+      "title": "AdExchanger – Brandtech acquires Pencil",
+      "url": "https://www.adexchanger.com/ai/the-brandtech-group-snatches-up-generative-ai-ad-platform/"
+    },
+    {
+      "title": "AdWeek – Scope3 vs IAS/DV AI brand safety",
+      "url": "https://www.adweek.com/programmatic/scope3-ias-doubleverify-ai-agents-brand-safety/"
+    },
+    {
+      "title": "Digiday – $26.8B still wasted in programmatic despite MFA crackdown",
+      "url": "https://digiday.com/media-buying/ad-tech-briefing-26-8-billion-still-wasted-in-programmatic-despite-mfa-crackdown/"
+    },
+    {
+      "title": "Privacy Sandbox – Update on plans (October 2025)",
+      "url": "https://privacysandbox.google.com/blog/update-on-plans-for-privacy-sandbox-technologies"
+    },
+    {
+      "title": "Digiday – Google Chrome keeps using third-party cookies",
+      "url": "https://digiday.com/media/google-chrome-will-now-continue-to-use-third-party-cookies/"
+    },
+    {
+      "title": "LiveRamp – Leader in IDC MarketScape Clean Rooms",
+      "url": "https://liveramp.com/blog/liveramp-leader-idc-marketscape-data-clean-room-technology"
+    },
+    {
+      "title": "Didomi – TCF IAB Europe APD ruling 2025",
+      "url": "https://www.didomi.io/blog/tcf-iab-europe-belgian-apd-may-2025"
+    },
+    {
+      "title": "EU – Digital Markets Act background",
+      "url": "https://en.wikipedia.org/wiki/Digital_Markets_Act"
+    },
+    {
+      "title": "ExchangeWire – Seedtag unveils neuro-contextual advertising",
+      "url": "https://www.exchangewire.com/blog/2025/06/05/seedtag-unveils-neuro-contextual-advertising-entering-a-new-era-of-contextual-targeting/"
+    },
+    {
+      "title": "Demandbase – CTV B2B Strategic Playbook 2026",
+      "url": "https://www.demandbase.com/blog/ctv-b2b-advertising/"
+    },
+    {
+      "title": "MNTN Research – CTV ad spend to $46.89B by 2028",
+      "url": "https://research.mountain.com/trends/ctv-ad-spend-will-grow-to-46-89-billion-by-2028/"
+    },
+    {
+      "title": "Variety – Netflix/Amazon DSP partnership Q4 2025",
+      "url": "https://variety.com/2025/tv/news/netflix-amazon-deal-connected-tv-impressions-advertising-1236513108/"
+    },
+    {
+      "title": "The Linked Blog – LinkedIn Ads benchmarks 2025",
+      "url": "https://thelinkedblog.com/2025/linkedin-ads-benchmarks-report-2025-key-insights-for-b2b-marketers-3213/"
+    },
+    {
+      "title": "Improvado – B2B Programmatic Strategies",
+      "url": "https://improvado.io/blog/b2b-programmatic-advertising-strategies"
+    },
+    {
+      "title": "Salesmotion – Intent data providers",
+      "url": "https://salesmotion.io/blog/intent-data-providers"
+    },
+    {
+      "title": "Directive – 6sense vs Demandbase vs RollWorks",
+      "url": "https://directiveconsulting.com/blog/b2b-ab2-tools-compared-6sense-vs-demandbase-vs-rollworks-and-when-to-use-each/"
+    },
+    {
+      "title": "Mutiny – Agentic AI for GTM teams",
+      "url": "https://www.mutinyhq.com/"
+    },
+    {
+      "title": "Marketing Brew – Spotify Ad Exchange launch",
+      "url": "https://www.marketingbrew.com/stories/2025/06/24/spotify-programmatic-audio"
+    },
+    {
+      "title": "Market.us – Programmatic DOOH Platform Market",
+      "url": "https://market.us/report/programmatic-dooh-platform-market/"
+    },
+    {
+      "title": "AdExchanger – MFA finally on its way out",
+      "url": "https://www.adexchanger.com/programmatic/mfa-might-finally-be-on-its-way-out-as-supply-and-demand-decline/"
+    }
+  ]
+}
