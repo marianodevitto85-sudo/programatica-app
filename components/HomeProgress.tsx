@@ -29,7 +29,7 @@ export default function HomeProgress({ totalClasses }: { totalClasses: number })
           {doneCount}/{totalClasses} · {startedCount} iniciadas
         </span>
       </div>
-      <div className="h-1.5 w-full bg-border rounded-full overflow-hidden">
+      <div className="h-[3px] w-full bg-border rounded-full overflow-hidden">
         <div
           className="h-full bg-accent rounded-full transition-all duration-500"
           style={{ width: `${avg}%` }}

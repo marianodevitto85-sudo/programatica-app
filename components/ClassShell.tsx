@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import type { CourseClass } from "@/lib/types";
@@ -13,12 +13,16 @@ import {
   readNote,
   writeNote,
   classCompletionPct,
+  markSectionViewed,
+  writeQuizScore,
 } from "@/lib/progress";
+import { allClassQuizzes } from "@/data/quiz-questions";
 
 import ClassContent from "./ClassContent";
 import KeyDataGrid from "./KeyDataGrid";
 import RecapBox from "./RecapBox";
 import ResourceList from "./ResourceList";
+import Quiz from "./Quiz";
 
 interface Props {
   c: CourseClass;
@@ -39,6 +43,7 @@ export default function ClassShell({ c, prevNum, nextNum }: Props) {
     setNote(readNote(c.num));
   }, [c.num]);
 
+  // Sección activa por scroll (resaltado en el sidebar)
   useEffect(() => {
     const handler = () => {
       const sections = SECTION_ORDER.map((k) => ({
@@ -56,6 +61,53 @@ export default function ClassShell({ c, prevNum, nextNum }: Props) {
     handler();
     return () => window.removeEventListener("scroll", handler);
   }, []);
+
+  // Auto-tracking: marcar sección como vista cuando estuvo >1.5s en viewport
+  // (no aplica a "quiz" — esa se marca recién al completarlo).
+  const dwellTimers = useRef<Map<SectionKey, number>>(new Map());
+  useEffect(() => {
+    const trackedKeys: SectionKey[] = SECTION_ORDER.filter((k) => k !== "quiz");
+    const observers: IntersectionObserver[] = [];
+
+    trackedKeys.forEach((key) => {
+      const el = document.getElementById(`section-${key}`);
+      if (!el) return;
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting && entry.intersectionRatio > 0.45) {
+              // arranca el timer si no está corriendo
+              if (!dwellTimers.current.has(key)) {
+                const id = window.setTimeout(() => {
+                  markSectionViewed(c.num, key);
+                  setProgress((prev) => ({ ...prev, [key]: true }));
+                  dwellTimers.current.delete(key);
+                }, 1500);
+                dwellTimers.current.set(key, id);
+              }
+            } else {
+              // salió del viewport antes de los 1.5s — cancelar
+              const id = dwellTimers.current.get(key);
+              if (id) {
+                window.clearTimeout(id);
+                dwellTimers.current.delete(key);
+              }
+            }
+          }
+        },
+        { threshold: [0, 0.45, 0.8] },
+      );
+      io.observe(el);
+      observers.push(io);
+    });
+
+    return () => {
+      observers.forEach((o) => o.disconnect());
+      dwellTimers.current.forEach((id) => window.clearTimeout(id));
+      dwellTimers.current.clear();
+    };
+  }, [c.num]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -125,14 +177,14 @@ export default function ClassShell({ c, prevNum, nextNum }: Props) {
           {c.title}
         </h1>
         <div className="mt-6 flex items-center gap-3 text-xs text-text-muted">
-          <div className="flex-1 max-w-xs h-1 bg-border rounded-full overflow-hidden">
+          <div className="flex-1 max-w-[200px] h-[3px] bg-border rounded-full overflow-hidden">
             <div
               className="h-full bg-accent transition-all duration-500"
               style={{ width: `${pct}%` }}
             />
           </div>
           <span className="tabular-nums font-semibold text-accent">{pct}%</span>
-          <span>completado</span>
+          <span className="text-text-dim">completado</span>
         </div>
       </header>
 
@@ -241,6 +293,28 @@ export default function ClassShell({ c, prevNum, nextNum }: Props) {
           <Section id="section-resources" title="Recursos">
             <ResourceList items={c.resources} />
           </Section>
+
+          {allClassQuizzes[c.num] && (
+            <Section id="section-quiz" title="Quiz">
+              <p className="text-sm text-text-muted mb-5 leading-relaxed">
+                Mini-cuestionario de la clase ({allClassQuizzes[c.num].length} preguntas · V/F + multiple choice).
+                Respondé para ver feedback inmediato; al terminar se marca la clase como completada.
+              </p>
+              <Quiz
+                classNum={c.num}
+                questions={allClassQuizzes[c.num]}
+                onComplete={(score, total) => {
+                  writeQuizScore(c.num, score, total);
+                  // marcar la sección quiz como vista
+                  const next = { ...progress, quiz: true };
+                  setProgress(next);
+                  writeClassProgress(c.num, next);
+                }}
+                onContinue={nextNum != null ? () => router.push(`/clase/${nextNum}`) : undefined}
+                continueLabel={nextNum != null ? `Continuar a Clase ${nextNum} →` : "Finalizar curso"}
+              />
+            </Section>
+          )}
 
           <nav className="mt-16 pt-6 border-t border-border flex items-center justify-between gap-4">
             {prevNum != null ? (
